@@ -1,0 +1,624 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"fo",
+				"font-family"
+			],
+			[
+				"lh",
+				"line-height"
+			],
+			[
+				"no",
+				"normal"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"he",
+				"header"
+			],
+			[
+				"$sc",
+				"$scope	AngularJS"
+			],
+			[
+				"rn",
+				"rn-carousel-controls"
+			],
+			[
+				"tr",
+				"transition-duration"
+			],
+			[
+				"s",
+				"script	Tag"
+			],
+			[
+				"ta",
+				"ta:l	text-align:left"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"br",
+				"bdrz	border-radius"
+			],
+			[
+				"h",
+				"h	height"
+			],
+			[
+				"dib",
+				"d:ib	display:inline-block"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"fl",
+				"fl:l	float:left"
+			],
+			[
+				"i",
+				"img	Tag"
+			],
+			[
+				"tac",
+				"ta:c	text-align:center"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"width",
+				"width"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Gruntfile.js",
+			"settings":
+			{
+				"buffer_size": 10761,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 5370,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/main.html",
+			"settings":
+			{
+				"buffer_size": 44,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/styles/main.scss",
+			"settings":
+			{
+				"buffer_size": 2854,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/scripts/controllers/header.js",
+			"settings":
+			{
+				"buffer_size": 325,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "bower.json",
+			"settings":
+			{
+				"buffer_size": 504,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "joseph.hohmatter@wanadoo.fr",
+			"settings":
+			{
+				"buffer_size": 27,
+				"line_ending": "Windows",
+				"name": "joseph.hohmatter@wanadoo.fr"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 127.0,
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: I",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/styles/main.scss",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-1/info.php5",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/Gruntfile.js",
+		"/C/Users/Seraphin/Desktop/.htpasswd",
+		"/C/Users/Seraphin/Desktop/.htaccess",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower.json",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/scripts/controllers/main.js",
+		"/C/Users/Seraphin/Desktop/index.html",
+		"/C/Users/Seraphin/Desktop/logs/.htaccess",
+		"/C/Users/Seraphin/Desktop/index.php",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/scripts/controllers/about.js",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-1/info.pl",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/scripts/controllers/header.js",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/views/main.html",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/.htaccess 3",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/.htaccess 2",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/.htaccess",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-1/.htaccess",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/scripts/app.js",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower_components/angular-timer/dist/angular-timer.min.js",
+		"/C/Users/Seraphin/Downloads/backupdb_28_11_2014.sql",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/package.json",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/.bowerrc",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/.editorconfig",
+		"/C/Users/Seraphin/Mes sites/Le-site-du-camp-de-jeunes/.gitignore",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/images/logo.png",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/index.html",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/.gitattributes",
+		"/C/Users/Seraphin/Mes sites/Le-site-du-camp-de-jeunes/.gitignore.txt",
+		"/C/Users/Seraphin/Desktop/html5-boilerplate-4.3.0/index.html",
+		"/C/Users/Seraphin/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Seraphin/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/dina/Desktop/Site Camp Jeunesse/yeosite/app/index.html",
+		"/C/Users/dina/Desktop/Site Camp Jeunesse/yeosite/app/views/main.html",
+		"/C/Users/Seraphin/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Seraphin/AppData/Roaming/Sublime Text 2/Packages/User/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\Users\\Seraphin\\Mes sites\\Le site du mariage"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"build",
+			"serve",
+			"display",
+			"none",
+			"../font/",
+			"skia-webfont",
+			".container",
+			".conaiiner",
+			"serve",
+			"img",
+			"' frameborder='0' allowfullscreen>\\n\\t\\t\\t\\t\\t\\t</iframe>\\n\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t</li>\\n",
+			"\\n\\t\\t\\t\\t\\t<div class='embed-container'>\\n\\t\\t\\t\\t\\t\\t<iframe src='",
+			"</h4>",
+			"<h4>",
+			"<p class=\"video-description\">\\n\\t\\t\\t\\t\\t\\t",
+			"css",
+			"video",
+			"wiredep",
+			"autoprefixer",
+			"553522",
+			"411D09",
+			"1e0000",
+			"2F1100",
+			"836656",
+			"\"",
+			"\"\\n\\t",
+			"\\n\\t",
+			"\\n",
+			"VM315:2 ",
+			"bower",
+			"l-3cols",
+			"cols3-col",
+			"<div class=\"cols2-col\"><input type=\"text\"/></div>",
+			"input",
+			"<input type=\"text\"(.*)/>",
+			"<input type=\"text\"(.+)/>",
+			"<div class=\"cols2-col\">(.+)",
+			"<div class=\"cols2-col\">\\n\\t\\t\\t\\t\\t\\t",
+			"l-2cols",
+			"form-row",
+			"/>\\n",
+			":\\n",
+			"\\t\\t\\t\\t\\t\\t\\n",
+			"\\t\\t\\t\\t\\t\\t</div>",
+			"<div>",
+			"<div >",
+			"<div class=\"l-2cols\">\\n\\t\\t\\t\\t\\t\\t\\t<in",
+			"<div class=\"l-2cols\">\\n\\t\\t\\t\\t\\t\\t<div class=\"l-2cols\"",
+			"<div class=\"l-2cols\">",
+			"<div class=\"l-2cols\">\n",
+			":\n",
+			"section class=\"page-section\"",
+			"n id=",
+			"div id",
+			"</div>",
+			"<div>",
+			"</b>\\n        </div>",
+			"<div><b>",
+			"\\n        <div>\\n            <br>\\n        </div>",
+			"\\n\\t\\t",
+			"tab"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"Mademoiselle Camille L",
+			"\"",
+			",url:\"",
+			"\"",
+			"title:\"",
+			"description:\"",
+			"F0ECE6",
+			"FF8C00",
+			"CDC875",
+			"00CE00",
+			"FFF100",
+			"'",
+			"\",\\n\\t",
+			"\\n\\t\"",
+			"\"\\n",
+			"\\n\"",
+			"",
+			"cols2-col",
+			"cols3-col l-cols2",
+			"<input type=\"text\"/>",
+			"<div class=\"cols2-col\"><input type=\"text\"$1/></div>",
+			"<div class=\"cols2-col\">$1</div>",
+			"<div class=\"cols2-col\">$1",
+			"<div class=\"cols2-col l-cols2\">\\n\\t\\t\\t\\t\\t\\t<div class=\"cols2-col\">",
+			"cols2-col",
+			"form-row l-cols2",
+			"/>",
+			":",
+			"",
+			"<div>",
+			"<div>\\n\\t\\t\\t\\t\\t\\t\\t<in",
+			"<div class=\"l-2cols\">\\n\\t\\t\\t\\t\\t\\t<div ",
+			"section",
+			"n class=\"page-section\" id=",
+			"section id",
+			"",
+			"</h3>",
+			"<h3>",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Gruntfile.js",
+					"settings":
+					{
+						"buffer_size": 10761,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								10396,
+								10396
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5979.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/index.html",
+					"settings":
+					{
+						"buffer_size": 5370,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1007.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/main.html",
+					"settings":
+					{
+						"buffer_size": 44,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								18,
+								18
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/styles/main.scss",
+					"settings":
+					{
+						"buffer_size": 2854,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1897,
+								1897
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 978.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/scripts/controllers/header.js",
+					"settings":
+					{
+						"buffer_size": 325,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								325,
+								325
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "bower.json",
+					"settings":
+					{
+						"buffer_size": 504,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								386,
+								386
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"settings":
+					{
+						"buffer_size": 27,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20,
+								20
+							]
+						],
+						"settings":
+						{
+							"auto_name": "joseph.hohmatter@wanadoo.fr",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 277.0,
+	"status_bar_visible": true
+}

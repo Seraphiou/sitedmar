@@ -1,0 +1,171 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+
+@import "compass/css3/font-face";
+
+@font-face {
+  font-family:"Mademoiselle Camille L";
+  src:url("fonts/mademoiselle_camille_l/Mademoiselle_Camille_L.eot?") format("eot"),url("fonts/mademoiselle_camille_l/Mademoiselle_Camille_L.woff") format("woff"),url("fonts/mademoiselle_camille_l/Mademoiselle_Camille_L.ttf") format("truetype"),url("fonts/mademoiselle_camille_l/Mademoiselle_Camille_L.svg#MademoiselleCamilleL") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:"lato";
+  src: url("fonts/lato/Lato-Regular.ttf") format("truetype");
+  font-weight:normal;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:"lato";
+  src: url("fonts/lato/Lato-Light.ttf") format("truetype");
+  font-weight:lighter;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:"lato";
+  src: url("fonts/lato/Lato-LightItalic.ttf") format("truetype");
+  font-weight:lighter;
+  font-style:italic;
+}
+
+@font-face {
+  font-family:"lato";
+  src: url("fonts/lato/Lato-Italic.ttf") format("truetype");
+  font-weight:normal;
+  font-style:italic;
+}
+
+.bg-img {
+  z-index: -9999999;
+  position: fixed;
+  width: 100%;
+}
+
+.blur {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+.nav li.active {
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all .5s ease;
+  cursor: default;
+  color: #ddd;
+
+  &:hover{
+    transition: all .5s ease;
+    color: #ddd;
+  }
+}
+
+.nav li:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: all .5s ease;
+  color: #fff;
+  cursor: pointer;
+}
+.l-constrained {
+  max-width: 800px;
+  padding: 2em;
+  margin: 0 auto;
+}
+section {
+  min-height: 500px;
+}
+.clearfix {
+  overflow: auto;
+}
+.c2-cols {
+}
+.description {
+  padding: 1em;
+}
+.col-2tiers {
+  float: left;
+  width: 70%;
+}
+.col-1tiers {
+  float: left;
+  width: 30%;
+}
+
+#histoire .section-container {
+  margin-top: 1em;
+  background-color: rgba(255,255,255,.6);
+  padding: 1em;
+}
+
+#infos {
+  background-image: url("../images/rose.jpg");
+  color: #fff;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #000;
+}
+
+.fixed{
+  position: fixed!important;
+  width: 100%;
+  top: 0;
+  box-shadow: 0px 1px 1px #000;
+  -webkit-box-shadow: 0px 1px 1px #000;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.nav li {
+  display: inline-block;
+  padding: 1em 1.2em;
+}
+
+body {
+  margin: 0;
+  font-family: "lato";
+}
+
+li.subnav {
+  position: absolute;
+  background-color: rgba(0,0,0,.8);
+    &:hover {
+      background-color: rgba(0,0,0,.7);
+    }
+}
+
+.nav-bar {
+  background-color: rgba(0,0,0,.8);
+  color: #ccc;
+  text-align: center;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+}
+
+.top-bar {
+  text-align: center;
+  background-color: rgba(255,255,255,.4);
+}
+
+.top-bar .title {
+  font-family: "Mademoiselle Camille L";
+  font-size: 5em;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  color: #ff8b89;
+}
+
+.top-bar .subtitle {
+  font-family: "lato";
+  padding: .5em 0;
+  margin: 0;
+}
