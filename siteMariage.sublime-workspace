@@ -4,28 +4,116 @@
 		"selected_items":
 		[
 			[
-				"fo",
-				"font-family"
+				"margi",
+				"margin-right"
 			],
 			[
-				"lh",
-				"line-height"
+				"M",
+				"Mademoiselle_Camille_L"
 			],
 			[
-				"no",
-				"normal"
+				"impo",
+				"important"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"with",
+				"width"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"font-",
+				"font-size"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"background-po",
+				"background-position-x"
 			],
 			[
 				"font",
-				"font-weight"
+				"font-size"
 			],
 			[
-				"fon",
-				"font-family"
+				"els",
+				"else"
+			],
+			[
+				"borde",
+				"border-radius"
+			],
+			[
+				"ch",
+				"checkbox"
+			],
+			[
+				"no",
+				"none"
+			],
+			[
+				"ng-s",
+				"ng-show	AngularJS"
+			],
+			[
+				"ng-r",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"root",
+				"$rootScope	AngularJS"
+			],
+			[
+				"t",
+				"town"
+			],
+			[
+				"backgrou",
+				"background-repeat"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"pag",
+				"padding-top"
+			],
+			[
+				"section",
+				"section-container"
 			],
 			[
 				"he",
 				"header"
+			],
+			[
+				"hea",
+				"header-nav"
 			],
 			[
 				"$sc",
@@ -80,10 +168,6 @@
 				"ta:c	text-align:center"
 			],
 			[
-				"back",
-				"background-color"
-			],
-			[
 				"se",
 				"section	Tag"
 			],
@@ -100,60 +184,49 @@
 	"buffers":
 	[
 		{
-			"file": "Gruntfile.js",
+			"contents": "",
+			"file": "/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/storeConfirmation.php",
+			"file_size": -1,
+			"file_write_time": -1,
 			"settings":
 			{
-				"buffer_size": 10761,
-				"line_ending": "Unix"
+				"buffer_size": 0,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "app/index.html",
 			"settings":
 			{
-				"buffer_size": 5370,
+				"buffer_size": 7024,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/main.html",
+			"file": "/C/xampp/htdocs/layout2/scripts/demo.js",
 			"settings":
 			{
-				"buffer_size": 44,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/styles/main.scss",
-			"settings":
-			{
-				"buffer_size": 2854,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/scripts/controllers/header.js",
-			"settings":
-			{
-				"buffer_size": 325,
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "bower.json",
+			"contents": "/**\nCore script to handle the entire theme and core functions\n**/\nvar Layout = function() {\n\n    var layoutImgPath = 'admin/layout2/img/';\n\n    var layoutCssPath = 'admin/layout2/css/';\n\n    var resBreakpointMd = Metronic.getResponsiveBreakpoint('md');\n\n    //* BEGIN:CORE HANDLERS *//\n    // this function handles responsive layout on screen size resize or mobile device rotate.\n\n    // Set proper height for sidebar and content. The content and sidebar height must be synced always.\n    var handleSidebarAndContentHeight = function() {\n        var content = $('.page-content');\n        var sidebar = $('.page-sidebar');\n        var body = $('body');\n        var height;\n\n        if (body.hasClass(\"page-footer-fixed\") === true && body.hasClass(\"page-sidebar-fixed\") === false) {\n            var available_height = Metronic.getViewPort().height - $('.page-footer').outerHeight() - $('.page-header').outerHeight();\n            if (content.height() < available_height) {\n                content.attr('style', 'min-height:' + available_height + 'px');\n            }\n        } else {\n            if (body.hasClass('page-sidebar-fixed')) {\n                height = _calculateFixedSidebarViewportHeight();\n                if (body.hasClass('page-footer-fixed') === false) {\n                    height = height - $('.page-footer').outerHeight();\n                }\n            } else {\n                var headerHeight = $('.page-header').outerHeight();\n                var footerHeight = $('.page-footer').outerHeight();\n\n                if (Metronic.getViewPort().width < resBreakpointMd) {\n                    height = Metronic.getViewPort().height - headerHeight - footerHeight;\n                } else {\n                    height = sidebar.outerHeight() + 10;\n                }\n\n                if ((height + headerHeight + footerHeight) <= Metronic.getViewPort().height) {\n                    height = Metronic.getViewPort().height - headerHeight - footerHeight;\n                }\n            }\n            content.attr('style', 'min-height:' + height + 'px');\n        }\n    };\n\n    // Handle sidebar menu links\n    var handleSidebarMenuActiveLink = function(mode, el) {\n        var url = location.hash.toLowerCase();    \n\n        var menu = $('.page-sidebar-menu');\n\n        if (mode === 'click' || mode === 'set') {\n            el = $(el);\n        } else if (mode === 'match') {\n            menu.find(\"li > a\").each(function() {\n                var path = $(this).attr(\"href\").toLowerCase();       \n                // url match condition         \n                if (path.length > 1 && url.substr(1, path.length - 1) == path.substr(1)) {\n                    el = $(this);\n                    return; \n                }\n            });\n        }\n\n        if (!el || el.size() == 0) {\n            return;\n        }\n\n        if (el.attr('href').toLowerCase() === 'javascript:;' || el.attr('href').toLowerCase() === '#') {\n            return;\n        }        \n\n        var slideSpeed = parseInt(menu.data(\"slide-speed\"));\n        var keepExpand = menu.data(\"keep-expanded\");\n\n        // disable active states\n        menu.find('li.active').removeClass('active');\n        menu.find('li > a > .selected').remove();\n\n        if (menu.hasClass('page-sidebar-menu-hover-submenu') === false) {\n            menu.find('li.open').each(function(){\n                if ($(this).children('.sub-menu').size() === 0) {\n                    $(this).removeClass('open');\n                    $(this).find('> a > .arrow.open').removeClass('open');\n                }                             \n            }); \n        } else {\n             menu.find('li.open').removeClass('open');\n        }\n\n        el.parents('li').each(function () {\n            $(this).addClass('active');\n            $(this).find('> a > span.arrow').addClass('open');\n\n            if ($(this).parent('ul.page-sidebar-menu').size() === 1) {\n                $(this).find('> a').append('<span class=\"selected\"></span>');\n            }\n            \n            if ($(this).children('ul.sub-menu').size() === 1) {\n                $(this).addClass('open');\n            }\n        });\n\n        if (mode === 'click') {\n            if (Metronic.getViewPort().width < resBreakpointMd && $('.page-sidebar').hasClass(\"in\")) { // close the menu on mobile view while laoding a page \n                $('.page-header .responsive-toggler').click();\n            }\n        }\n    };\n\n    // Handle sidebar menu\n    var handleSidebarMenu = function() {\n        $('.page-sidebar').on('click', 'li > a', function(e) {\n\n            if (Metronic.getViewPort().width >= resBreakpointMd && $(this).parents('.page-sidebar-menu-hover-submenu').size() === 1) { // exit of hover sidebar menu\n                return;\n            }\n\n            if ($(this).next().hasClass('sub-menu') === false) {\n                if (Metronic.getViewPort().width < resBreakpointMd && $('.page-sidebar').hasClass(\"in\")) { // close the menu on mobile view while laoding a page \n                    $('.page-header .responsive-toggler').click();\n                }\n                return;\n            }\n\n            if ($(this).next().hasClass('sub-menu always-open')) {\n                return;\n            }\n\n            var parent = $(this).parent().parent();\n            var the = $(this);\n            var menu = $('.page-sidebar-menu');\n            var sub = $(this).next();\n\n            var autoScroll = menu.data(\"auto-scroll\");\n            var slideSpeed = parseInt(menu.data(\"slide-speed\"));\n            var keepExpand = menu.data(\"keep-expanded\");\n\n            if (keepExpand !== true) {\n                parent.children('li.open').children('a').children('.arrow').removeClass('open');\n                parent.children('li.open').children('.sub-menu:not(.always-open)').slideUp(slideSpeed);\n                parent.children('li.open').removeClass('open');\n            }\n\n            var slideOffeset = -200;\n\n            if (sub.is(\":visible\")) {\n                $('.arrow', $(this)).removeClass(\"open\");\n                $(this).parent().removeClass(\"open\");\n                sub.slideUp(slideSpeed, function() {\n                    if (autoScroll === true && $('body').hasClass('page-sidebar-closed') === false) {\n                        if ($('body').hasClass('page-sidebar-fixed')) {\n                            menu.slimScroll({\n                                'scrollTo': (the.position()).top\n                            });\n                        } else {\n                            Metronic.scrollTo(the, slideOffeset);\n                        }\n                    }\n                    handleSidebarAndContentHeight();\n                });\n            } else {\n                $('.arrow', $(this)).addClass(\"open\");\n                $(this).parent().addClass(\"open\");\n                sub.slideDown(slideSpeed, function() {\n                    if (autoScroll === true && $('body').hasClass('page-sidebar-closed') === false) {\n                        if ($('body').hasClass('page-sidebar-fixed')) {\n                            menu.slimScroll({\n                                'scrollTo': (the.position()).top\n                            });\n                        } else {\n                            Metronic.scrollTo(the, slideOffeset);\n                        }\n                    }\n                    handleSidebarAndContentHeight();\n                });\n            }\n\n            e.preventDefault();\n        });\n\n        // handle ajax links within sidebar menu\n        $('.page-sidebar').on('click', ' li > a.ajaxify', function(e) {\n            e.preventDefault();\n            Metronic.scrollTop();\n\n            var url = $(this).attr(\"href\");\n            var menuContainer = $('.page-sidebar ul');\n            var pageContent = $('.page-content');\n            var pageContentBody = $('.page-content .page-content-body');\n\n            menuContainer.children('li.active').removeClass('active');\n            menuContainer.children('arrow.open').removeClass('open');\n\n            $(this).parents('li').each(function() {\n                $(this).addClass('active');\n                $(this).children('a > span.arrow').addClass('open');\n            });\n            $(this).parents('li').addClass('active');\n\n            if (Metronic.getViewPort().width < resBreakpointMd && $('.page-sidebar').hasClass(\"in\")) { // close the menu on mobile view while laoding a page \n                $('.page-header .responsive-toggler').click();\n            }\n\n            Metronic.startPageLoading();\n\n            var the = $(this);\n\n            $.ajax({\n                type: \"GET\",\n                cache: false,\n                url: url,\n                dataType: \"html\",\n                success: function(res) {\n\n                    if (the.parents('li.open').size() === 0) {\n                        $('.page-sidebar-menu > li.open > a').click();\n                    }\n\n                    Metronic.stopPageLoading();\n                    pageContentBody.html(res);\n                    Layout.fixContentHeight(); // fix content height\n                    Metronic.initAjax(); // initialize core stuff\n                },\n                error: function(xhr, ajaxOptions, thrownError) {\n                    Metronic.stopPageLoading();\n                    pageContentBody.html('<h4>Could not load the requested content.</h4>');\n                }\n            });\n        });\n\n        // handle ajax link within main content\n        $('.page-content').on('click', '.ajaxify', function(e) {\n            e.preventDefault();\n            Metronic.scrollTop();\n\n            var url = $(this).attr(\"href\");\n            var pageContent = $('.page-content');\n            var pageContentBody = $('.page-content .page-content-body');\n\n            Metronic.startPageLoading();\n\n            if (Metronic.getViewPort().width < resBreakpointMd && $('.page-sidebar').hasClass(\"in\")) { // close the menu on mobile view while laoding a page \n                $('.page-header .responsive-toggler').click();\n            }\n\n            $.ajax({\n                type: \"GET\",\n                cache: false,\n                url: url,\n                dataType: \"html\",\n                success: function(res) {\n                    Metronic.stopPageLoading();\n                    pageContentBody.html(res);\n                    Layout.fixContentHeight(); // fix content height\n                    Metronic.initAjax(); // initialize core stuff\n                },\n                error: function(xhr, ajaxOptions, thrownError) {\n                    pageContentBody.html('<h4>Could not load the requested content.</h4>');\n                    Metronic.stopPageLoading();\n                }\n            });\n        });\n    };\n\n    // Helper function to calculate sidebar height for fixed sidebar layout.\n    var _calculateFixedSidebarViewportHeight = function() {\n        var sidebarHeight = Metronic.getViewPort().height - $('.page-header').outerHeight();\n        if ($('body').hasClass(\"page-footer-fixed\")) {\n            sidebarHeight = sidebarHeight - $('.page-footer').outerHeight();\n        }\n\n        return sidebarHeight;\n    };\n\n    // Handles fixed sidebar\n    var handleFixedSidebar = function() {\n        var menu = $('.page-sidebar-menu');\n\n        Metronic.destroySlimScroll(menu);\n\n        if ($('.page-sidebar-fixed').size() === 0) {\n            handleSidebarAndContentHeight();\n            return;\n        }\n\n        if (Metronic.getViewPort().width >= resBreakpointMd) {\n            menu.attr(\"data-height\", _calculateFixedSidebarViewportHeight());\n            Metronic.initSlimScroll(menu);\n            handleSidebarAndContentHeight();\n        }\n    };\n\n    // Handles sidebar toggler to close/hide the sidebar.\n    var handleFixedSidebarHoverEffect = function () {\n        var body = $('body');\n        if (body.hasClass('page-sidebar-fixed')) {\n            $('.page-sidebar').on('mouseenter', function () {\n                if (body.hasClass('page-sidebar-closed')) {\n                    $(this).find('.page-sidebar-menu').removeClass('page-sidebar-menu-closed');\n                }\n            }).on('mouseleave', function () {\n                if (body.hasClass('page-sidebar-closed')) {\n                    $(this).find('.page-sidebar-menu').addClass('page-sidebar-menu-closed');\n                }\n            });\n        }\n    };\n\n    // Hanles sidebar toggler\n    var handleSidebarToggler = function() {\n        var body = $('body');\n        if ($.cookie && $.cookie('sidebar_closed') === '1' && Metronic.getViewPort().width >= resBreakpointMd) {\n            $('body').addClass('page-sidebar-closed');\n            $('.page-sidebar-menu').addClass('page-sidebar-menu-closed');\n        }\n\n        // handle sidebar show/hide\n        $('body').on('click', '.sidebar-toggler', function(e) {\n            var sidebar = $('.page-sidebar');\n            var sidebarMenu = $('.page-sidebar-menu');\n            $(\".sidebar-search\", sidebar).removeClass(\"open\");\n\n            if (body.hasClass(\"page-sidebar-closed\")) {\n                body.removeClass(\"page-sidebar-closed\");\n                sidebarMenu.removeClass(\"page-sidebar-menu-closed\");\n                if ($.cookie) {\n                    $.cookie('sidebar_closed', '0');\n                }\n            } else {\n                body.addClass(\"page-sidebar-closed\");\n                sidebarMenu.addClass(\"page-sidebar-menu-closed\");\n                if (body.hasClass(\"page-sidebar-fixed\")) {\n                    sidebarMenu.trigger(\"mouseleave\");\n                }\n                if ($.cookie) {\n                    $.cookie('sidebar_closed', '1');\n                }\n            }\n\n            $(window).trigger('resize');\n        });\n\n        handleFixedSidebarHoverEffect();\n\n        // handle the search bar close\n        $('.page-sidebar').on('click', '.sidebar-search .remove', function(e) {\n            e.preventDefault();\n            $('.sidebar-search').removeClass(\"open\");\n        });\n\n        // handle the search query submit on enter press\n        $('.page-sidebar .sidebar-search').on('keypress', 'input.form-control', function(e) {\n            if (e.which == 13) {\n                $('.sidebar-search').submit();\n                return false; //<---- Add this line\n            }\n        });\n\n        // handle the search submit(for sidebar search and responsive mode of the header search)\n        $('.sidebar-search .submit').on('click', function(e) {\n            e.preventDefault();\n            if ($('body').hasClass(\"page-sidebar-closed\")) {\n                if ($('.sidebar-search').hasClass('open') === false) {\n                    if ($('.page-sidebar-fixed').size() === 1) {\n                        $('.page-sidebar .sidebar-toggler').click(); //trigger sidebar toggle button\n                    }\n                    $('.sidebar-search').addClass(\"open\");\n                } else {\n                    $('.sidebar-search').submit();\n                }\n            } else {\n                $('.sidebar-search').submit();\n            }\n        });\n\n        // handle close on body click\n        if ($('.sidebar-search').size() !== 0) {\n            $('.sidebar-search .input-group').on('click', function(e) {\n                e.stopPropagation();\n            });\n\n            $('body').on('click', function() {\n                if ($('.sidebar-search').hasClass('open')) {\n                    $('.sidebar-search').removeClass(\"open\");\n                }\n            });\n        }\n    };\n\n    // Handles the horizontal menu\n    var handleHeader = function() {\n        // handle search box expand/collapse        \n        $('.page-header').on('click', '.search-form', function(e) {\n            $(this).addClass(\"open\");\n            $(this).find('.form-control').focus();\n\n            $('.page-header .search-form .form-control').on('blur', function(e) {\n                $(this).closest('.search-form').removeClass(\"open\");\n                $(this).unbind(\"blur\");\n            });\n        });\n\n        // handle hor menu search form on enter press\n        $('.page-header').on('keypress', '.hor-menu .search-form .form-control', function(e) {\n            if (e.which == 13) {\n                $(this).closest('.search-form').submit();\n                return false;\n            }\n        });\n\n        // handle header search button click\n        $('.page-header').on('mousedown', '.search-form.open .submit', function(e) {\n            e.preventDefault();\n            e.stopPropagation();\n            $(this).closest('.search-form').submit();\n        });\n    };\n\n    // Handles Bootstrap Tabs.\n    var handleTabs = function() {\n        // fix content height on tab click\n        $('body').on('shown.bs.tab', 'a[data-toggle=\"tab\"]', function() {\n            handleSidebarAndContentHeight();\n        });\n    };\n\n    // Handles the go to top button at the footer\n    var handleGoTop = function() {\n        var offset = 300;\n        var duration = 500;\n\n        if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) { // ios supported\n            $(window).bind(\"touchend touchcancel touchleave\", function(e) {\n                if ($(this).scrollTop() > offset) {\n                    $('.scroll-to-top').fadeIn(duration);\n                } else {\n                    $('.scroll-to-top').fadeOut(duration);\n                }\n            });\n        } else { // general \n            $(window).scroll(function() {\n                if ($(this).scrollTop() > offset) {\n                    $('.scroll-to-top').fadeIn(duration);\n                } else {\n                    $('.scroll-to-top').fadeOut(duration);\n                }\n            });\n        }\n\n        $('.scroll-to-top').click(function(e) {\n            e.preventDefault();\n            $('html, body').animate({\n                scrollTop: 0\n            }, duration);\n            return false;\n        });\n    };\n\n    // Hanlde 100% height elements(block, portlet, etc)\n    var handle100HeightContent = function() {\n\n        var target = $('.full-height-content');\n        var height;\n\n        if (!target.hasClass('portlet')) {\n            return;\n        }\n\n        height = Metronic.getViewPort().height -\n            $('.page-header').outerHeight(true) -\n            $('.page-footer').outerHeight(true) -\n            $('.page-title').outerHeight(true) -\n            $('.page-bar').outerHeight(true);\n\n        if ($('body').hasClass('page-header-fixed')) {\n            height = height - $('.page-header').outerHeight(true);\n        }\n\n        var portletBody = target.find('.portlet-body');\n\n        if (Metronic.getViewPort().width < resBreakpointMd) {\n            Metronic.destroySlimScroll(portletBody.find('.full-height-content-body')); // destroy slimscroll \n            return;\n        }\n\n        if (target.find('.portlet-title')) {\n            height = height - target.find('.portlet-title').outerHeight(true);\n        }\n\n        height = height - parseInt(portletBody.css(\"padding-top\"));\n        height = height - parseInt(portletBody.css(\"padding-bottom\"));\n\n        if (target.hasClass(\"full-height-content-scrollable\")) {\n            portletBody.find('.full-height-content-body').css('height', height);\n            Metronic.initSlimScroll(portletBody.find('.full-height-content-body'));\n        } else {\n            portletBody.css('min-height', height);\n        }\n    };\n\n    //* END:CORE HANDLERS *//\n\n    return {\n\n        // Main init methods to initialize the layout\n        // IMPORTANT!!!: Do not modify the core handlers call order.\n\n        initHeader: function() {\n            handleHeader(); // handles horizontal menu    \n        },\n\n        setSidebarMenuActiveLink: function(mode, el) {\n            handleSidebarMenuActiveLink(mode, el);\n        },\n\n        initSidebar: function() {\n            //layout handlers\n            handleFixedSidebar(); // handles fixed sidebar menu\n            handleSidebarMenu(); // handles main menu\n            handleSidebarToggler(); // handles sidebar hide/show\n\n            if (Metronic.isAngularJsApp()) {      \n                handleSidebarMenuActiveLink('match'); // init sidebar active links \n            }\n\n            Metronic.addResizeHandler(handleFixedSidebar); // reinitialize fixed sidebar on window resize\n        },\n\n        initContent: function() {\n            handle100HeightContent(); // handles 100% height elements(block, portlet, etc)\n            handleTabs(); // handle bootstrah tabs\n\n            Metronic.addResizeHandler(handleSidebarAndContentHeight); // recalculate sidebar & content height on window resize\n            Metronic.addResizeHandler(handle100HeightContent); // reinitialize content height on window resize \n        },\n\n        initFooter: function() {\n            handleGoTop(); //handles scroll to top functionality in the footer\n        },\n\n        init: function () {            \n            this.initHeader();\n            this.initSidebar();\n            this.initContent();\n            this.initFooter();\n        },\n\n        //public function to fix the sidebar and content height accordingly\n        fixContentHeight: function() {\n            handleSidebarAndContentHeight();\n        },\n\n        initFixedSidebarHoverEffect: function() {\n            handleFixedSidebarHoverEffect();\n        },\n\n        initFixedSidebar: function() {\n            handleFixedSidebar();\n        },\n\n        getLayoutImgPath: function() {\n            return Metronic.getAssetsPath() + layoutImgPath;\n        },\n\n        getLayoutCssPath: function() {\n            return Metronic.getAssetsPath() + layoutCssPath;\n        }\n    };\n\n}();",
+			"file": "/C/xampp/htdocs/layout2/scripts/layout.js",
+			"file_size": 22081,
+			"file_write_time": 130624380760000000,
 			"settings":
 			{
-				"buffer_size": 504,
-				"line_ending": "Unix"
+				"buffer_size": 21506,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "joseph.hohmatter@wanadoo.fr",
+			"file": "getMessages.php",
 			"settings":
 			{
-				"buffer_size": 27,
-				"line_ending": "Windows",
-				"name": "joseph.hohmatter@wanadoo.fr"
+				"buffer_size": 195,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -193,25 +266,79 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-1/index.html",
+		"/D/Séraphin/pokgem/Gemme 3.9.7/KeyConfig.Marshal",
+		"/C/Users/Seraphin/Desktop/404.html",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/storeConfirmation.php",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/dist/storeConfirmation.php",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/storeConfirmation.php",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/views/main.html",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/styles/main.scss",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/index.html",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/access.log.current",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/storeCovoiturage.php",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/scripts/controllers/confirmation.js",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/scripts/controllers/covoiturage.js",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/scripts.213dff71.js",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/scripts.b21a45c4.js",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/scripts/controllers/message.js",
+		"/C/Users/Seraphin/Desktop/pour sandrine",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/scripts/controllers/livre.js",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/index.html",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/scripts/controllers/header.js",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/package.json",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/Gruntfile.js",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/getMessages.php",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/getMessages.php",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/scripts.a771ae4d.js",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/storeMessage.php",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/storeMessage.php",
+		"/C/Users/Seraphin/Downloads/Message.sql",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/access.log.17.7",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/scripts.4307e6bd.js",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/dist/scripts/vendor.6c742526.js",
+		"/C/Users/Seraphin/Desktop/scripts.a771ae4d.js",
+		"/C/Users/Seraphin/Desktop/scripts.4307e6bd.js",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/dist/scripts.4307e6bd.js",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/getMessages.php",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/storeMessage.php",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/storeCovoiturage.php",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/storeConfirmation.php",
+		"/C/Users/Seraphin/Downloads/db573129485.sql",
+		"/C/Program Files (x86)/EasyPHP-DevServer-13.1VC9/binaries/mysql/data/ib_logfile0",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/scripts/controllers/slideShow.js",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/scripts/app.js",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/scripts/controllers/main.js",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/app/.htaccess",
+		"/C/Users/Seraphin/Mes sites/Le site du mariage/config.php",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-3/storeCovoiturage.php",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/views/main.html",
+		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-3/config.php",
 		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/styles/main.scss",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/scripts/controllers/header.js",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/index.html",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/scripts/controllers/main.js",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower_components/angular-carousel/index.html",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower_components/angular-carousel/src/directives/rn-carousel.js",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower_components/angular-carousel/src/directives/rn-carousel-indicators.js",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower_components/angular-carousel/src/directives/rn-carousel-prev.js",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower_components/angular-carousel/src/directives/rn-carousel-next.js",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower_components/angular-carousel/fullscreen.html",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/scripts/controllers/about.js",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/scripts/app.js",
+		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower.json",
 		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-1/info.php5",
 		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/Gruntfile.js",
 		"/C/Users/Seraphin/Desktop/.htpasswd",
 		"/C/Users/Seraphin/Desktop/.htaccess",
-		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower.json",
-		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/scripts/controllers/main.js",
 		"/C/Users/Seraphin/Desktop/index.html",
 		"/C/Users/Seraphin/Desktop/logs/.htaccess",
 		"/C/Users/Seraphin/Desktop/index.php",
-		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/scripts/controllers/about.js",
 		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-1/info.pl",
-		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/scripts/controllers/header.js",
-		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/views/main.html",
 		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/.htaccess 3",
 		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/.htaccess 2",
 		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/.htaccess",
 		"/C/Users/Seraphin/AppData/Local/Temp/fz3temp-1/.htaccess",
-		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/scripts/app.js",
 		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/bower_components/angular-timer/dist/angular-timer.min.js",
 		"/C/Users/Seraphin/Downloads/backupdb_28_11_2014.sql",
 		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/package.json",
@@ -219,7 +346,6 @@
 		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/.editorconfig",
 		"/C/Users/Seraphin/Mes sites/Le-site-du-camp-de-jeunes/.gitignore",
 		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/images/logo.png",
-		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/app/index.html",
 		"/C/Users/Seraphin/Mes sites/Le site du camp de jeunes/.gitattributes",
 		"/C/Users/Seraphin/Mes sites/Le-site-du-camp-de-jeunes/.gitignore.txt",
 		"/C/Users/Seraphin/Desktop/html5-boilerplate-4.3.0/index.html",
@@ -232,91 +358,186 @@
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 42.0
 	},
 	"find_in_files":
 	{
 		"height": 0.0,
 		"where_history":
 		[
-			"C:\\Users\\Seraphin\\Mes sites\\Le site du mariage"
+			"C:\\Users\\Seraphin\\Mes sites\\Le site du mariage\\app",
+			"C:\\Users\\Seraphin\\Mes sites\\Le site du camp de jeunes\\bower_components\\angular-carousel",
+			"C:\\Users\\Seraphin\\Mes sites\\Le site du camp de jeunes\\",
+			"C:\\Users\\Seraphin\\Mes sites\\Le site du camp de jeunes\\bower_components\\angular-carousel\\src\\directives"
 		]
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
-			"build",
-			"serve",
-			"display",
-			"none",
-			"../font/",
-			"skia-webfont",
-			".container",
-			".conaiiner",
-			"serve",
-			"img",
-			"' frameborder='0' allowfullscreen>\\n\\t\\t\\t\\t\\t\\t</iframe>\\n\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t</li>\\n",
-			"\\n\\t\\t\\t\\t\\t<div class='embed-container'>\\n\\t\\t\\t\\t\\t\\t<iframe src='",
-			"</h4>",
-			"<h4>",
-			"<p class=\"video-description\">\\n\\t\\t\\t\\t\\t\\t",
-			"css",
-			"video",
-			"wiredep",
-			"autoprefixer",
-			"553522",
-			"411D09",
-			"1e0000",
-			"2F1100",
-			"836656",
-			"\"",
-			"\"\\n\\t",
-			"\\n\\t",
-			"\\n",
-			"VM315:2 ",
-			"bower",
-			"l-3cols",
-			"cols3-col",
-			"<div class=\"cols2-col\"><input type=\"text\"/></div>",
-			"input",
-			"<input type=\"text\"(.*)/>",
-			"<input type=\"text\"(.+)/>",
-			"<div class=\"cols2-col\">(.+)",
-			"<div class=\"cols2-col\">\\n\\t\\t\\t\\t\\t\\t",
-			"l-2cols",
-			"form-row",
-			"/>\\n",
-			":\\n",
-			"\\t\\t\\t\\t\\t\\t\\n",
-			"\\t\\t\\t\\t\\t\\t</div>",
-			"<div>",
-			"<div >",
-			"<div class=\"l-2cols\">\\n\\t\\t\\t\\t\\t\\t\\t<in",
-			"<div class=\"l-2cols\">\\n\\t\\t\\t\\t\\t\\t<div class=\"l-2cols\"",
-			"<div class=\"l-2cols\">",
-			"<div class=\"l-2cols\">\n",
-			":\n",
-			"section class=\"page-section\"",
-			"n id=",
-			"div id",
-			"</div>",
-			"<div>",
-			"</b>\\n        </div>",
-			"<div><b>",
-			"\\n        <div>\\n            <br>\\n        </div>",
-			"\\n\\t\\t",
-			"tab"
+			"scrollind",
+			"@",
+			"\\n(9)(?!(3))",
+			"\\n(9)(?!(3)).*php",
+			"\\n(9)(?!(0.33)).*php",
+			"\\n(9)(?!(3.12)&(0.33)).*php",
+			"\\n(9)(?!(3.12)|(0.33)).*php",
+			"\\n(9)(?!3.12).*php",
+			"\\n(9)(?!3).*php",
+			"\\n(9)(?!3).*.com",
+			"\\n(9)(?!3).*.com/",
+			"\\n(9)(?!3)",
+			"\\n(9)?!4",
+			"\\n!(^93.12.148.39)",
+			"\\n(!^93.12.148.39)",
+			"93.12.148.39",
+			"age.php",
+			"message.php",
+			"ion.php",
+			"php",
+			"Séraphin",
+			"h2",
+			"dormir",
+			"l-",
+			"liste",
+			"button",
+			"butt",
+			"détails",
+			"refere",
+			"bottom-ar",
+			"bottom-arab",
+			"bottom-ara",
+			"control",
+			"group",
+			"enfants",
+			"voiture",
+			"button",
+			"h5",
+			"button-long",
+			"button",
+			"button-long",
+			"button-lon",
+			"raised",
+			"card",
+			"info",
+			"h4",
+			"section-cont",
+			"verset2",
+			"mariage",
+			"verset3",
+			"verset",
+			"photo-couple",
+			"c2",
+			"coming",
+			"(17)",
+			"storeconf",
+			"confirm",
+			"confirmat",
+			"pwerror",
+			"1.89",
+			"font-sha",
+			"|",
+			"arrow-to",
+			"accueil",
+			"usemi",
+			" ",
+			"'",
+			"jpg",
+			"lato",
+			"Lato",
+			"lato",
+			".nav",
+			"nav",
+			"Voici",
+			"accue",
+			"ademoisell",
+			"histoire h1",
+			"bottom-arab2",
+			"botom-arab",
+			"bottom-arab2",
+			"top-arab",
+			"top-arab2",
+			"histoire h1",
+			"de présence",
+			"h3",
+			"section",
+			"section-c",
+			"text-sh",
+			"accueil",
+			"mairie",
+			"photo-re",
+			"mariage",
+			"histoire",
+			"bottom-arab2",
+			"verset3",
+			"verset",
+			"2b",
+			"verset3",
+			"b2",
+			"2a",
+			"h5",
+			"appart",
+			"voyage",
+			"coeur",
+			"slide",
+			"slider",
+			"slide",
+			".image",
+			"image",
+			"DS",
+			"slider",
+			"180px",
+			"background",
+			"h1",
+			"didi",
+			"bottom-ara",
+			"bottom-arab",
+			"enfants",
+			"enfant",
+			"enfa",
+			"card",
+			"top-arab",
+			"card",
+			"h5",
+			"photo-do",
+			"h5",
+			"h1",
+			"card"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
 			"",
-			"Mademoiselle Camille L",
+			"\"",
+			"Error\" class=\"error-message\"",
+			"\"\n\"\nError\" class=\"error-message\"",
+			"\"",
+			"$red-color",
+			".9",
+			",.5);",
+			"rgba(#",
+			"or1 {",
+			",",
+			"\\n}\\n.color1{ \\nbackground-color: #",
+			"','#",
+			"'",
+			"}\">",
+			"=\"{lev",
+			"'",
+			"request",
+			".",
+			"?",
+			"",
+			"mysqli_real_escape_string($request->",
+			"https://www.youtube.com/v/abH-MmKQ2vs?enablejsapi=1&version=3&playerapiid=ytplayer",
+			"https://www.youtube.com/v/abH-MmKQ2vs",
+			"http://www.youtube.com/v/",
+			"'",
+			"https://www.youtube.com/embed/abH-MmKQ2vs",
 			"\"",
 			",url:\"",
 			"\"",
@@ -365,43 +586,14 @@
 	"groups":
 	[
 		{
-			"selected": 6,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Gruntfile.js",
+					"file": "/C/Users/Seraphin/AppData/Local/Temp/fz3temp-2/storeConfirmation.php",
 					"settings":
 					{
-						"buffer_size": 10761,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								10396,
-								10396
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 5979.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "app/index.html",
-					"settings":
-					{
-						"buffer_size": 5370,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
@@ -414,145 +606,118 @@
 						],
 						"settings":
 						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/index.html",
+					"settings":
+					{
+						"buffer_size": 7024,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2520,
+								2520
+							]
+						],
+						"settings":
+						{
 							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1007.0,
+						"translation.y": 276.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/main.html",
+					"file": "/C/xampp/htdocs/layout2/scripts/demo.js",
 					"settings":
 					{
-						"buffer_size": 44,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								18,
-								18
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/AngularJS/AngularJS.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3389.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "app/styles/main.scss",
+					"file": "/C/xampp/htdocs/layout2/scripts/layout.js",
 					"settings":
 					{
-						"buffer_size": 2854,
+						"buffer_size": 21506,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1897,
-								1897
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 978.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "app/scripts/controllers/header.js",
+					"file": "getMessages.php",
 					"settings":
 					{
-						"buffer_size": 325,
+						"buffer_size": 195,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								325,
-								325
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "bower.json",
-					"settings":
-					{
-						"buffer_size": 504,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								386,
-								386
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"settings":
-					{
-						"buffer_size": 27,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								20,
-								20
-							]
-						],
-						"settings":
-						{
-							"auto_name": "joseph.hohmatter@wanadoo.fr",
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -560,6 +725,11 @@
 					},
 					"type": "text"
 				}
+			]
+		},
+		{
+			"sheets":
+			[
 			]
 		}
 	],
@@ -580,11 +750,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.918614447181,
 			1.0
 		],
 		"rows":
@@ -596,7 +773,7 @@
 	"menu_visible": true,
 	"replace":
 	{
-		"height": 62.0
+		"height": 63.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -609,16 +786,16 @@
 	},
 	"select_project":
 	{
-		"height": 0.0,
+		"height": 500.0,
 		"selected_items":
 		[
 		],
-		"width": 0.0
+		"width": 380.0
 	},
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 277.0,
+	"side_bar_width": 296.0,
 	"status_bar_visible": true
 }

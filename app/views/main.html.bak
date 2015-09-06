@@ -1,0 +1,640 @@
+<section id="accueil">
+  <div class="l-constrained">
+    <div class="section-container">
+      <p>« Car je connais les projets que j'ai formés sur vous, dit l'Eternel, projets de paix et non de malheur, afin de vous donner un avenir et de l'espérance. » <span class="reference">Jérémie 29:11</span></p>
+    </div>
+  </div>
+  <img class="bottom-arab2 opacarab" src="images/arabesque2b.png"></img>
+
+</section>
+
+
+<section id="histoire">
+  <div class="l-constrained">
+    <h1>Nous...</h1>
+    <div class="section-container c2-cols clearfix">
+      <img src="images/dina.jpg" class="photo-dina col-1tiers"/>
+      <div class="col-2tiers">
+        <div class="description">
+          <h2>Dina racontée par Séraphin...</h2>
+
+      <img src="images/dina.jpg" class="photo-dina-pour-iphone"/>
+
+          <p>
+            Dina est née à Paris, le 19 Aout 1989. Elle est d'origine ivoirienne et ingénieur en Mathématiques Financières.
+          </p>
+          <p>
+            Lorsque je l'ai rencontrée dans mon école, j'ai découvert une jeune fille joviale, très belle et avec le coeur sur la main envers quiconque croisait son chemin. C'est d'ailleurs en voulant me venir en aide qu'elle a ouvert la porte à notre histoire.
+          </p>
+          <p>
+            Alliant beauté, simplicité et douceur, cette femme m'impressionne car elle sait tout faire et excelle dans tout ce qu'elle réalise... Entre chant, piano, dessin, écriture, bricolage et dons culinaires hors-pair, elle aime partager tout ce qu'elle a reçu de Dieu et m'enrichit de sa personne.
+          </p>
+          <p>
+            La vie avec ma princesse est surprenante et mouvementée. Malgré toutes les qualités qu'elle possède, son coeur reste la principale raison qui me fait l'aimer et souhaiter faire d'elle la femme la plus heureuse et épanouie qui soit.
+          </p>
+          <p>
+            Séraphin
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section-container c2-cols clearfix">
+      <div class="col-2tiers">
+        <div class="description">
+          <h2>Séraphin dans les yeux de Dina...</h2>
+
+            <img src="images/seraphin2.jpg" class="photo-seraphin-pour-iphone"/>
+
+          <p>
+            Séraphin est né à Mulhouse, le 11 Mars 1990. Il est alsacien et ingénieur en Systèmes d'Information.
+          </p>
+          <p>
+            Si je devais personnifier l'humilité, je choisirais cet homme... Plein de bonté, il m'a charmée par son dévouement constant et sincère envers les autres mais aussi par sa gentillesse, son humour, son intelligence et sa beauté remarquable... En réalité, il a juste eu à être lui-même pour que j'en tombe profondément amoureuse !
+          </p>
+          <p>
+            À ses côtés, le quotidien est un doux mélange d'action, de romantisme et de fous rires ! Le rencontrer m'a fait redécouvrir la simplicité de la vie et l'amour envers les autres...
+          </p>
+          <p>
+            Devenir la femme de Séraphin Burgermeister est pour moi l'une des plus grandes bénédictions qui me soient arrivées... Me traitant comme la plus importante des princesses, cet homme mérite tout mon amour et un foyer empreint de paix et d'amour... Cette maison existe et, par la grâce de Dieu, je la lui offrirai...
+          </p>
+          <p>
+            Dina
+          </p>
+
+        </div>
+      </div>
+      <img src="images/seraphin2.jpg" class="photo-seraphin col-1tiers"/>
+    </div>
+    <div class="section-container c2-cols clearfix">
+      <img src="images/photo-couple1.png" class="photo-couple col-1tiers"/>
+      <div class="col-2tiers">
+        <div class="description">
+          <h2>Notre histoire...</h2>
+
+          <img src="images/photo-couple1.png" class="photo-couple-pour-iphone"/>
+
+          <p>
+            Septembre 2010 : Première rencontre : Tout commença à l'École des Mines de Nancy... Dans la même promotion et ensemble en cours d'Anglais et d'Humanités, nous développâmes une amitié totalement platonique tout en donnant du fil à retordre à nos professeurs avec nos bavardages !
+          </p>
+
+          <p>
+            Juin 2011 : Nos yeux s'ouvrirent l'un sur l'autre... Et nous nous avouâmes être tombés très amoureux mais, recherchant la volonté de Dieu, nous n'osâmes rien commencer...
+          </p>
+          <p>
+            Novembre 2011 : Après quatre mois d'attente et de prière chacun de notre côté, les sentiments étant non seulement encore présents mais surtout de plus en plus forts, nous prîmes donc la décision de commencer notre histoire en nous engageant l'un envers l'autre et devant Dieu.
+          </p>
+          <p>
+            S'ensuivit alors une période pleine de joie, de découvertes, de présentations, mais aussi d'épreuves, de désillusions et d'une vie scolaire surmontée main dans la main avec le soutien de notre Père...
+          </p>
+          <p>
+            Septembre 2013 : Séraphin demanda la main de Dina à ses parents.
+          </p>
+          <p>
+            Février 2014 : Les fiançailles ! Entourés de nos amis, Séraphin demanda Dina en mariage... !
+          </p>
+          <p>
+            Septembre 2014 : Diplômation ! Tous deux diplômés de notre École, nous sommes fin prêts à officiliser cet engagement que nous avons pris l'un envers l'autre et envers Dieu depuis bientôt quatre ans...
+          </p>
+
+            Juillet 2015 : Le Mariage ! La suite très bientôt :)
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="center">
+      <p> <div class="titrevideo"> Nos fiançailles en Images... </div> </p>
+        <img class="arabesqueverset" src="images/arabesque7c.png"></img>
+
+      <div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.3";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-video" data-allowfullscreen="true" data-href="/dina.yapoga/videos/vb.1159091892/10205714377316224/?type=1"><div class="fb-xfbml-parse-ignore"></div></div>
+    </div>
+
+    <div class="center">
+      <div class="verset3"> « Moi et ma maison, nous servirons l'Éternel... » </div>
+      <div class="refverset3"> Josué 24:15</div>
+      <img class="arabesqueverset" src="images/arabesque7d.png"></img>
+    </div>
+  </div>
+</section>
+
+<img class="top-arab" src="images/arabesquerose2.png"></img>
+<section id="mariage">
+  <div class="l-constrained">
+    <div class="section-container">
+      <h1>Le mariage</h1>   
+      <p>
+        <div class="verset2">« "Cette fois-ci, voilà l'os de mes os et la chair de ma chair ! On l’appellera : Femme." À cause de cela, l'homme quittera son père et sa mère, il s'attachera à sa femme, et tous deux ne feront plus qu'un... »</div>
+      </p>
+      <div class="photo-resposive-container">
+        <img class="photo-resposive" src="images/photomariage.jpg"></img>
+      </div>
+      <p>
+        <span class="refverset2">Genèse 2:23-24</span>
+      </p>
+      <img class="arabesqueverset" src="images/arabesque7b.png"></img>
+
+      <p>
+        <h2>La Cérémonie Religieuse et les Festivités </h2>
+        <p>
+          Samedi 11 Juillet 2015, tous ensemble, nous passerons une journée au Domaine de La Muette à Fresneaux-Montchevreuil.
+        </p>    
+
+        <div>
+          <img src="images/domaine1.jpg" class="img-domaine" width="800"/>
+        </div>
+
+        <p>
+          Le Domaine de La Muette est un havre de paix constitué d’une demeure de charme et d’un pavillon de chasse au coeur d’un parc de 160 hectares agrémenté de deux étangs entourés de jardins paysagers et d’une forêt de feuillus...
+        </p>
+        <ul class="card">
+          <h2>Déroulement de la journée</h2>
+          <p>
+            <li>Cérémonie religieuse</li>
+            <li>Photos</li>
+            <li>Vin d'honneur</li>
+            <li>Dîner & Soirée ! :)</li>
+          </p>
+        </ul>
+
+        <p>
+          Comment me rendre au Domaine ? Où dormir ? Comment venir si je n'ai pas de voiture ? Vous trouverez les réponses à ces questions dans la section <span class="lien" ng-click="scrollToId('infos')">Infos Pratiques</span>.
+        </p>
+
+
+        <p>
+          Nous serons très heureux de passer tous ces moments avec vous...
+        </p>
+
+        <h2>La Cérémonie Civile</h2>
+        <p>La veille, Vendredi 10 Juillet 2015, à 15h00, notre union civile sera célébrée à la Mairie de Valenton (94460).</p>
+        <div>
+          <img class="photo-mairie" src="images/mairie.jpg" width="460"/>
+        </div>
+        <p>Toutes les personnes souhaitant participer à ce moment sont, bien évidemment, les bienvenues !</p>
+
+        <img class="arabesqueverset2" src="images/arabesque7b.png"></img>
+      </div>
+
+    </div>
+  </div>
+  <img class="bottom-arab4" src="images/arabrose2.png"></img>
+
+</section>
+
+<section id="infos">
+  <div class="l-constrained">
+    <h1>Infos Pratiques</h1>
+    <div class="section-container c2-cols clearfix">     
+      <div class="description">
+        <div class="center">
+          <h4>Comment me rendre au Domaine de La Muette ?</h4>
+          <address class="card domaine-address">
+            <img src="images/domaine.jpg" class="photo-domaine"/>
+            <h5>Adresse du domaine :</h5>
+
+            <img src="images/domaine.jpg" class="photo-domaine-pour-iphone"/>
+            <p>Domaine de la Muette "RFTP"</p>
+            <p>Hameau de Lormeteau</p>
+            <p>RD 35 route de Beauvais</p>
+            <p>60240 Fresneaux-Montchevreuil</p>
+            <div class="clearfix"></div>
+          </address>
+          <p>Avec cette adresse, certains GPS pourront déduire une autre destination et vous conduire dans une autre ville. Le mieux sera donc de vérifier l’adresse (en particulier la ville) qui aura été déduite par votre appareil.</p>
+
+          <p>Toutefois, le moyen le plus sûr et préférable sera d’entrer exactement l’adresse « Latitude, Longitude » suivante dans votre appareil:</p>
+          <div class="center">
+            <span class="coords">49.303646, 2.015113</span>
+          </div>
+
+          <p>Les Smartphones sont également équipés de ce mode en entrant directement ces numéros dans la barre d’adresse.</p>
+
+          <p>Anticipez votre déplacement en cliquant sur le lien "Créer Mon Propre Itinéraire" et en entrant votre adresse de départ :</p>
+
+          <div class="center">
+            <div class="googlemaps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2601.567635519689!2d2.015285!3d49.303533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1425256897320" width="400" height="300" frameborder="0" style="border:0"></iframe>
+          </div>
+            <div>
+              <a href="https://www.google.com/maps/dir//Domaine+de+la+Muette+%22RFTP%22,+Hameau+de+Lormeteau+RD+35+route+de+Beauvais,+60240+Fresneaux-Montchevreuil/@49.303533,2.015285,16z/data=!4m12!1m3!3m2!1s0x0000000000000000:0x2ef4978f91785453!2sDomaine+de+la+Muette+%22RFTP%22!4m7!1m0!1m5!1m1!1s0x47e6fc4a4be6350f:0x2ef4978f91785453!2m2!1d2.015175!2d49.303663?hl=fr-FR"  target="_blank" class="button raised button-long">
+                <div class="center" fit="">CREER MON PROPRE ITINERAIRE</div>
+              </a>
+            </div>
+
+            <p>Le Jour J, des fléchages seront installés à proximité du Domaine pour vous y retrouver... Quoi qu'il arrive, pas de panique !</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-container hotels clearfix">
+      <div class="description">
+        <h4>Où pourrai-je dormir ?</h4>
+        <img src="images/hotel.jpg" class="photo-hotel"/>
+        <p>
+          Voici les trois principaux hôtels dans les environs du Domaine :
+        </p>
+        <address class="card">
+          <h5>
+            Hôtel Mercure (18 km)
+          </h5>
+          <p>21 Avenue Montaigne</p>
+          <p>60000 BEAUVAIS</p>
+          <p>Tel.: 03 44 02 80 80</p>
+          <a href="http://www.mercure.com/fr/hotel-0350-hotel-mercure-beauvais/index.shtml"  target="_blank" class="button raised">
+            <div class="center" fit="">PLUS DE DETAILS</div>
+          </a>
+        </address>
+        <p>
+          <address class="card">
+            <h5>
+              Hostellerie Saint-Vincent (20 km)
+            </h5>
+            <p>Espace St. Germain</p>
+            <p>241 Rue de Clermont</p>
+            <p>60000 BEAUVAIS</p>
+            <p>Tel.: 03 44 05 49 99</p>
+            <a href="http://www.stvincent-beauvais.com/"  target="_blank" class="button raised">
+              <div class="center" fit="">PLUS DE DETAILS</div>
+            </a>
+          </address>    
+        </p>
+        <address class="card">
+          <h5>
+            Hôtel Formule 1 (20 km)
+          </h5>
+          <p>23 Avenue Montaigne</p>
+          <p>60000 BEAUVAIS</p>
+          <p>Tel.: 08 91 70 51 78</p>
+          <a href="http://www.hotelf1.com/fr/hotel-2225-formule-1-hotelf1-beauvais/index.shtml"  target="_blank" class="button raised">
+            <div class="center" fit="">PLUS DE DETAILS</div>
+          </a>
+        </address>
+
+      </div>
+      <div class="center marge">
+        <p>Il vous est, cependant, possible de vous rapprocher du domaine dans des chambres d'hôtes pour une prestation plus onéreuse. Pour plus d'informations, vous pouvez nous contacter par email à l'adresse : dinaseraphin@gmail.com.
+        </p>
+      </div>
+    </div>
+    <div class="section-container c2-cols clearfix" ng-controller="CovoiturageController">
+      <img src="images/voiture2.jpg" class="col-1tiers photo-voiture"/>
+      <div class="col-2tiers">
+        <div class="description">
+          <h4>Je n'ai pas de voiture... ou J'ai des places dans ma voiture !</h4>
+
+          <img src="images/voiture-iphone.jpg" class="photo-voiture-pour-iphone"/>
+
+          <p>
+            Le domaine nécessitant un accès en voiture, si vous n'êtes pas véhiculé ou que vous avez des places à offrir, vous pouvez vous inscrire pour un éventuel covoiturage.
+          </p>
+
+          <div class="group">      
+            <input type="text" ng-model="varname" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Nom</label>
+          </div>
+          <div ng-show="nameError">
+            <div class="error-message">
+              Entrez votre nom.
+            </div>
+          </div>
+          <div class="group">      
+            <input type="text" ng-model="firstname" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Prénom</label>
+          </div>
+          <div ng-show="firstnameError">
+            <div class="error-message">
+              Entrez votre prénom.
+            </div>
+          </div>
+
+          <label class="radio">
+            <input type="radio" name="radios" value="0" ng-model="searchForPlace">
+            <span class="outer"><span class="inner"></span></span>Je cherche de la place dans une voiture...
+          </label>
+
+          <label class="radio">
+            <input type="radio" name="radios" value="1" ng-model="searchForPlace">
+            <span class="outer"><span class="inner"></span></span>Je propose de la place dans ma voiture :)
+          </label>
+
+          <div ng-show="choosingError">
+            <div class="error-message">
+              Veuillez faire un choix :)
+            </div>
+          </div>
+          <div class="row">
+            <label for="return">
+              Aller-Retour
+              <input type="checkbox" ng-model="varreturn" name="return"/>
+            </label>
+          </div>
+
+          <div class="row">
+            <label for="amount" class="normal-label">Nombre de places <span ng-show="searchForPlace==0">désirées</span><span ng-hide="searchForPlace==0">libres</span>:</label>
+            <select name="amount" class="select-input" ng-model="placeCount">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>10 lol</option>
+            </select>
+          </div>
+          <div ng-show="placeError">
+            <div class="error-message">
+              Choisissez votre nombre de places.
+            </div>
+          </div>
+
+          <div class="group">      
+            <input type="text" ng-model="town" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Ville de départ</label>
+          </div>
+          <div ng-show="townError">
+            <div class="error-message">
+              Entrez votre ville de départ.
+            </div>
+          </div>
+
+          <div class="group">      
+            <input type="text" ng-model="tel" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Numéro de téléphone</label>
+          </div>
+          <div ng-show="telError">
+            <div class="error-message">
+              Entrez votre numéro de téléphone.
+            </div>
+          </div>
+
+
+          <span ng-click="sendCovoiturage()" class="button raised">
+            <div class="center" fit="">ENVOYER</div>
+          </span>
+        </div>
+      </div>
+      <div class="center">
+        <p> Le covoiturage permettra à certains invités de créer des liens en ammont des festivités... Alors bons échanges ! ;) </p>
+      </div>
+    </div>
+
+    <div class="section-container c2-cols clearfix">
+      <div class="col-2tiers">
+        <div class="description">
+          <h4>J'ai un enfant entre 3 ans et 10 ans...</h4>
+          <p>
+            "Laissez les petits enfants, et ne les empêchez pas de venir à moi, car le royaume des cieux est pour ceux qui leur ressemblent." Matthieu 19:14
+          </p>
+
+          <img src="images/enfants.jpg" class="photo-enfants-pour-iphone"/>
+
+          <p>Les enfants ont une immense importance pour nous. Ainsi, une journée d'activité et de surprises sera prévue pour eux entre la fin de la cérémonie et le début de soirée. Des animateurs sauront les amuser et rendre cette journée sereine pour vous et divertissante pour vos gamins !</p>
+          <p>
+            Vers Minuit, des couches seront installés pour les enfants fatigués, les plus endurant pourront, bien évidemment, nous rejoindre pour enflammer le Dancefloor !
+          </p>
+        </div>
+      </div>
+   <img src="images/enfants.jpg" class="col-1tiers photo-enfants"/>
+
+      
+    </div>
+    <div class="fininfos">Pour toute question supplémentaire, veuillez nous contacter par email à l'adresse : dinaseraphin@gmail.com</div>
+  </div>
+      <img class="bottom-arab opacarab" src="images/arabesque2c.png"></img>
+
+</section>
+
+<section id="photos">
+  <div class="clearfix section-container">
+    <img class="coeurphoto" src="images/coeur.png"></img>
+    <h1>Galerie Photos</h1>
+    <div class="l-constrained">
+      <div class="section-container">
+        <div class="center racontephoto">
+          Didi aime les photos, Séraphinou un peu moins... Donc Didi supplie Séraphinou... Séraphinou accepte...
+          <p>Oups ! Didi n'aime pas la photo et veut en refaire une... Séraphinou est déjà blasé mais prend quand même la pose... Oh non ! Séraphinou n'a pas souri (car trop blasé)... Didi veut donc en re-refaire une ! Séraphinou est encore plus blasé mais reprend quand même la pose... En plus, il sourit ! "Merci mon chéri", répond Didi ^_^</p>
+
+          <p>
+            De ces instants assez drôles nous reste une très longue série de magnifiques souvenirs de ces quatre années de bonheur...</p>
+            En voici quelques uns... :)
+          </div>
+        </div>
+      </div>
+      <div class="image" ng-click="setCurrentSlideIndex(0);" style="background-image: url('images/Gallery/DS1.jpg')"></div>
+      <div class="image" ng-click="setCurrentSlideIndex(1);" style="background-image: url('images/Gallery/DS2.jpg')"></div>
+      <div class="image" ng-click="setCurrentSlideIndex(2);" style="background-image: url('images/Gallery/DS3.jpg')"></div>
+      <div class="image" ng-click="setCurrentSlideIndex(3);" style="background-image: url('images/Gallery/DS4.jpg')"></div>
+      <div class="image" ng-click="setCurrentSlideIndex(4);" style="background-image: url('images/Gallery/DS5.jpg')"></div>
+      <div class="image" ng-click="setCurrentSlideIndex(5);" style="background-image: url('images/Gallery/DS6.jpg')"></div>
+      <div class="image" ng-click="setCurrentSlideIndex(6);" style="background-image: url('images/Gallery/DS7.jpg')"></div>
+      <div class="image" ng-click="setCurrentSlideIndex(7);" style="background-image: url('images/Gallery/DS8.jpg')"></div>
+      <div class="image" ng-click="setCurrentSlideIndex(8);" style="background-image: url('images/Gallery/DS9.jpg')"></div>
+      <div class="image" ng-click="setCurrentSlideIndex(9);" style="background-image: url('images/Gallery/DS10.jpg')"></div>
+      <div class="image" ng-click="setCurrentSlideIndex(10);" style="background-image: url('images/Gallery/DS11.jpg')"></div>
+      <div class="image" ng-click="setCurrentSlideIndex(11);" style="background-image: url('images/Gallery/DS12.jpg')"></div>
+    </div>
+
+
+    <div class="clearfix"></div>
+  </div>
+</section>
+
+
+<section ng-controller="ConfirmationController" id="presence">
+
+
+  <div class="l-constrained">
+    <h3>Confirmation de Présence</h3>
+    <div class="section-container c2-cols clearfix">
+
+      <div class="center">
+
+        <p>Pour les personnes conviées à notre mariage, veuillez, s'il-vous-plaît, nous confirmer votre présence avant le 9 Mai (non plus le 2 Mai vu la date d'envoi des faire-parts, désolés !)
+        </p>
+        <p>
+          N'hésitez pas à nous envoyer un email à dinaseraphin@gmail.com si vous avez la moindre interrogation.
+        </p>
+      </div>
+      <div class="description">
+        <div class="group">      
+          <input type="text" ng-model="varname" required>
+
+          <span class="highlight"></span>
+          <span class="bar"></span>
+
+          <label>Nom</label>
+        </div>
+        <div ng-show="nameError">
+          <div class="error-message">
+            Entrez votre nom.
+          </div>
+        </div>
+
+        <div class="group">      
+          <input type="text" ng-model="firstname" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Prénom</label>
+        </div>
+        <div ng-show="firstnameError">
+          <div class="error-message">
+            Entrez votre prénom.
+          </div>
+        </div>
+
+        <div class="row">
+          <label for="notcoming">
+            Je ne pourrai malheureusement pas venir... :(
+            <input type="checkbox" ng-model="notcoming" name="notcoming"/>
+          </label>
+        </div>
+        <div>
+        </div>
+        <div ng-show="!notcoming" class="row">
+          <label for="amount" ng-model="placeCount" class="normal-label">Nombre total de personnes invitées qui seront présentes :</label>
+          <select name="amount" class="select-input" ng-model="placeCount">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+          </select>
+        </div>
+        <div class="group">
+          <input type="{{inputType}}" ng-model="password" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label class="codelong">Code Secret figurant sur le faire-part</label>
+          <label class="codecourt">Code Secret figurant sur le faire-part</label>
+
+        </div>
+        <div class="row">
+          <label for="">
+            Afficher le code ?
+            <input type="checkbox" ng-click="hideShowPassword()"/>
+          </label>
+        </div>
+        <div ng-show="passwordError">
+          <div class="error-message">
+            Entrez le mot de passe.
+          </div>
+        </div>
+
+        <div ng-click="sendConfirmation()" class="button raised">
+          <div class="center" fit>CONFIRMER</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="liste">
+  <div class="l-constrained">
+    <div class="section-container">
+      <h1>Notre Liste</h1>
+
+      <p>
+        Très heureux d'enfin débuter notre vie de couple dans un cocon bien douillet, nous vous remercions de contribuer à notre bonheur si vous souhaitez y participer...
+      </p>
+
+      <h2>Tirelire de notre Début de Vie à deux et de notre Voyage de Noces</h2>
+
+      <p>
+        <div>
+          <img class="photo-voyage" src="images/voyage.jpg" width="380"/>
+        </div>
+      </P>
+      <a href="https://payname.fr/c/Toi-and-Moi-dans-cette-nouvelle-vie-love#whoAreYou"  target="_blank" class="button raised">
+        <div class="center" fit="">JE PARTICIPE !</div>
+      </a>
+      <h2>Merci ! :)</h2>
+    </div>
+  </div>
+</section>
+
+<section id="message">
+  <div ng-controller="MessageController" class="l-constrained">
+    <h1>Livre d'Or</h1>
+    <div class="section-container c2-cols clearfix">
+      <div class="description">
+        <h2>Une pensée... ? Vous pouvez vous exprimer... ! :)</h2>
+
+        <div class="group name-input">      
+          <input type="text" ng-model="varname" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Nom, Prénom</label>
+        </div>
+
+        <div ng-show="nameError">
+          <div class="error-message">
+            Entrez vos nom et prénom.
+          </div>
+        </div>
+
+        <div class="group name-input">      
+          <input type="text" ng-model="title" required>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+          <label>Titre</label>
+        </div>
+
+        <div ng-show="titleError">
+          <div class="error-message">
+            Entrez un titre.
+          </div>
+        </div>
+
+        <div class="group textarea-great">
+          <textarea class="form-control" placeholder="Votre message..." ng-model="message"></textarea>
+          <span class="highlight"></span>
+          <span class="bar"></span>
+        </div>
+
+        <div ng-show="nameError">
+          <div class="error-message">
+            Entrez votre message.
+          </div>
+        </div>
+
+        <div ng-click="sendMessage()" class="button raised">
+          <div class="center" fit>ENVOYER</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img class="bottom-arab5 opacarab" src="images/arabesque2b.png"></img>
+
+</section>
+
+<section id="ecritures" ng-controller="LivreDOrController">
+  <div class="l-constrained">
+    <p>
+      <div class="center"> <img class="arabesqueverset" src="images/arabesque7a.png"></img>
+      </div>
+      <h3>Vos messages...</h3>
+      <p>
+        <div class="center"> <img class="arabesqueverset" src="images/arabesque7b.png"></img></div>
+      </p>
+      <div ng-repeat="message in messages track by message.ID" class="card" ng-class="'color'+chooseColor(message)">
+        <h4 class="message-title">{{message.Titre}}</h4>
+        <p class="message-text">{{message.MESSAGE}}</p>
+        <p class="message-sign">{{message.NOM}}</p>
+      </div>
+    </div>
+  </p>
+
+</section>

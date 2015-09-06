@@ -2,7 +2,8 @@
 <html class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>Mariage S&D</title>
+    <title>Dina & Séraphin</title>
+    <meta name="keywords" content="Seraphin, Dina, Dina Séraphin, Séraphin">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -14,35 +15,71 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body scroll ng-app="leSiteDuMariageApp">
+  <body id="page-top" scroll scrollindex ng-app="leSiteDuMariageApp">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="container">
-      <img class="bg-img blur" src="images/photo-couple1.JPG">
-      <div ng-controller="headerCtrl" class="header">
+    <div ng-controller="headerCtrl" class="container">
+      <img class="bg-img" src="images/bg1.jpg"/>
+      <img class="bg-img" ng-show="bgimg=='bg2'" src="images/bg2.jpg"/>
+      <img class="bg-img" ng-show="bgimg=='bg3'" src="images/bg3.jpg"/>
+      <img class="bg-img" ng-show="bgimg=='bg4'" src="images/bg4.jpg"/>
+      <img class="bg-img" ng-show="bgimg=='bg4'" src="images/bg4.jpg"/>
+      <img class="bg-img" ng-show="bgimg=='bg5'" src="images/bg5.jpg"/>
+      <div class="header">
         <div class="top-bar">
           <div class="top-bar-content">
-            <h2 class="title">Dina et Séraphin</h2>
-            <p class="subtitle">11 Juillet 2015</p>
+            <h2 class="title">Dina <span class="amp"> & </span> Séraphin</h2>
+            <p class="subtitle">10 & 11 Juillet 2015</p>
           </div>
         </div>
         <div class="nav-bar" ng-class="{fixed:boolChangeClass}">
           <ul class="nav nav-pills pull-right">
-            <li class="active" ng-click="scrollToId('histoire')">Notre Histoire</li>
-            <li ng-click="scrollToId('mariage')">Le Mariage</li>
-            <li ng-click="scrollToId('photos')">Galerie</li>
-            <li ng-click="scrollToId('infos')">Infos Pratiques</li>
-            <li ng-click="scrollToId('message')">Message</li>
+            <li ng-click="scrollToId('histoire')" ng-class="{active:level=='histoire'}">Nous...</li>
+            <li ng-click="scrollToId('mariage')" ng-class="{active:level=='mariage'}">Le Mariage</li>
+            <li ng-click="scrollToId('infos')" ng-class="{active:level=='infos'}">Infos Pratiques</li>
+            <li ng-click="scrollToId('photos')" ng-class="{active:level=='photos'}">Galerie Photos</li>
+            <li ng-click="scrollToId('presence')" ng-class="{active:level=='presence'}">Confirmation</li>
+            <li ng-click="scrollToId('liste')" ng-class="{active:level=='liste'}">Notre Liste</li>
+            <li ng-click="scrollToId('album')" ng-class="{active:level=='album'}">Images du Mariage !</li>
+            <li ng-click="scrollToId('bali')" ng-class="{active:level=='bali'}">Notre Voyage à Bali...</li>
+            <li ng-click="scrollToId('message')" ng-class="{active:(level=='message')||(level=='ecritures')}">Livre d'Or</li>
           </ul>
         </div>
       </div>
 
       <div ng-view="">
       </div>
+      <div ng-show="showSlider" class="slider-container cover-page">
+        <span class="close" ng-click="showSlider=!showSlider">X</span>
+        <img ng-repeat="slide in slides" class="slide-img"
+           ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()"
+           ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+
+        <span class="slider-arrow prev" ng-click="nextSlide()"> &lt; </span>
+        <span class="slider-arrow next" ng-click="prevSlide()"> &gt; </span>
+        <nav class="nav">
+          <div class="wrapper">
+            <ul class="dots">
+              <li class="dot" ng-repeat="slide in slides">
+                <span ng-class="{'active':isCurrentSlideIndex($index)}"
+                   ng-click="setCurrentSlideIndex($index);">•</span>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <img class="arrow-to-top" ng-show="showArrow" ng-click="scrollToId('page-top')" src="images/icons/arrow.png">
+      
+      <div class="credit" ng-show="(level=='presence')||(level=='liste')||(level=='message')||(level=='ecritures')"> © Site réalisé par Séraphin Burgermeister & Dina Yapoga</div>
+ 
     </div>
+
+    </div>
+
+
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -93,6 +130,10 @@
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/about.js"></script>
         <script src="scripts/controllers/header.js"></script>
+        <script src="scripts/controllers/covoiturage.js"></script>
+        <script src="scripts/controllers/message.js"></script>
+        <script src="scripts/controllers/confirmation.js"></script>
+        <script src="scripts/controllers/livre.js"></script>
         <!-- endbuild -->
 </body>
 </html>

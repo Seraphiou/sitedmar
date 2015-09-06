@@ -2,39 +2,66 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 @import "compass/css3/font-face";
 
+$red-color: #FD3D5A;
+//$red-color: #FD3D5A;
+a {
+  text-decoration: none;
+}
+
 @font-face {
-  font-family:"Mademoiselle Camille L";
-  src:url("fonts/mademoiselle_camille_l/Mademoiselle_Camille_L.eot?") format("eot"),url("fonts/mademoiselle_camille_l/Mademoiselle_Camille_L.woff") format("woff"),url("fonts/mademoiselle_camille_l/Mademoiselle_Camille_L.ttf") format("truetype"),url("fonts/mademoiselle_camille_l/Mademoiselle_Camille_L.svg#MademoiselleCamilleL") format("svg");
+  font-family: "Mademoiselle Camille L";
+  src: url("fonts/Mademoiselle_Camille_L.eot");
+  src: url("fonts/Mademoiselle_Camille_L.eot?#iefix") format("embedded-opentype"),
+       url("fonts/Mademoiselle_Camille_L.woff") format("woff"),
+       url("fonts/Mademoiselle_Camille_L.ttf") format("truetype"),
+       url("fonts/Mademoiselle_Camille_L.svg#MademoiselleCamilleL") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Great Vibes";
+  src: url("fonts/GreatVibes-Regular.eot");
+  src: url("fonts/GreatVibes-Regular.eot?#iefix") format("embedded-opentype"),
+       url("fonts/GreatVibes-Regular.woff") format("woff"),
+       url("fonts/GreatVibes-Regular.ttf") format("truetype"),
+       url("fonts/GreatVibes-Regular.svg#MademoiselleCamilleL") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family:"lato";
+  src: url("fonts/Lato-Regular.ttf") format("truetype");
   font-weight:normal;
   font-style:normal;
 }
 
 @font-face {
   font-family:"lato";
-  src: url("fonts/lato/Lato-Regular.ttf") format("truetype");
-  font-weight:normal;
-  font-style:normal;
-}
-
-@font-face {
-  font-family:"lato";
-  src: url("fonts/lato/Lato-Light.ttf") format("truetype");
+  src: url("fonts/Lato-Light.ttf") format("truetype");
   font-weight:lighter;
   font-style:normal;
 }
 
 @font-face {
   font-family:"lato";
-  src: url("fonts/lato/Lato-LightItalic.ttf") format("truetype");
+  src: url("fonts/Lato-LightItalic.ttf") format("truetype");
   font-weight:lighter;
   font-style:italic;
 }
 
 @font-face {
   font-family:"lato";
-  src: url("fonts/lato/Lato-Italic.ttf") format("truetype");
+  src: url("fonts/Lato-Italic.ttf") format("truetype");
   font-weight:normal;
   font-style:italic;
+}
+
+.select-input {
+  height: 30px;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .bg-img {
@@ -48,39 +75,635 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   -webkit-filter: blur(2px);
 }
 
+.amp {
+  font-family: "Great Vibes";
+  font-size: .37em;
+  color: #ccc;
+  opacity: .80;
+}
+
 .nav li.active {
   background-color: rgba(255, 255, 255, 0.05);
-  transition: all .5s ease;
+  transition: all .6s ease;
   cursor: default;
   color: #ddd;
 
   &:hover{
+    background-color: rgba(255, 255, 255, 0.05);
     transition: all .5s ease;
+    cursor: default;
     color: #ddd;
   }
 }
 
+#mariage .section-container, #liste .section-container, #video .section-container, #credit .section-container {
+  text-align: center;
+}
+
 .nav li:hover {
-  background-color: rgba(255, 255, 255, 0.05);
+  background-color: rgba(255, 255, 255, 0.075);
   transition: all .5s ease;
   color: #fff;
   cursor: pointer;
 }
 .l-constrained {
-  max-width: 800px;
+  max-width: 930px;
   padding: 2em;
   margin: 0 auto;
+}
+
+
+.l-constrained2 {
+  max-width: 100%;
+  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+#liste .l-constrained{
+  padding-bottom: 0.4em;
 }
 section {
   min-height: 500px;
 }
+
+.textarea-great .form-control  {
+  width: 100%;
+  height: 300px;
+}
+.textarea-great .bar  {
+  width: 100%;
+}
+#accueil p {
+     font-size: 2em;
+     color: #111;
+     margin-top: 2.4em;
+     margin-left: 15em;
+     margin-right: -41px;
+     text-align: center;
+     font-family: "Great Vibes";
+     font-weight: normal;
+
+
+    & .reference {
+      display: block;
+      margin-top: 0.2em;
+      color: $red-color;
+      font-weight: normal;
+      text-align: center;
+      font-family: "Great Vibes";
+      font-size: 1.2em;
+    }
+
+}
+
+address {
+  margin: 3em;
+}
+.button-long {
+  width: 350px!important;
+  margin: 1em;
+}
+
+.photo-domaine {
+  float: right;
+  margin-right: 3em;
+  position: relative;
+  width: 242px;
+}
+.card {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  background-color: #fff;
+  border: solid 1px #ccc;
+  padding: 2em 3em 2em 3em;
+  box-shadow: 1px 1px 3px #ccc;
+  &.domaine-address {
+      padding: 2em 2em 2em 0em;
+  }
+}
+#ecritures {
+  text-align: center;
+}
+.error-message {
+  display: inline-block;
+  padding: .5em;
+  background-color: rgba(255,16,16,.3);
+  border-radius: 4px;
+  color: #fff;
+  margin-bottom: 1em;
+}
+
+.lien {
+  color: $red-color;
+  cursor: pointer;
+}
+
+#ecritures .card {
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  max-width: 330px;
+  margin: 1em;
+  & .message-title {
+    font-size: 1.89em;
+    margin: 0;
+  }
+  & .message-sign {
+      color: $red-color;
+      font-weight: lighter;
+      font-size: 1.89em;
+      margin: 0;
+      font-family: "Great Vibes";
+  }
+
+}
+.hotels {
+  text-align: center;
+  & img {
+    width: 250px;
+    margin-bottom: 1em;
+  }
+  & .card {
+    max-width: 360px;
+    margin: .5em auto;
+  }
+}
+address {
+  font-style: normal;
+  text-align: center;
+  & h5{
+    font-family: "Great Vibes";
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 0;
+  }
+}
 .clearfix {
   overflow: auto;
+  clear: both;
+}
+.coords {
+  color: $red-color;
+  font-size: 2em;
+  font-weight: normal;
 }
 .c2-cols {
 }
 .description {
   padding: 1em;
+}
+.bottom-arab {
+  float: right;
+  width: 200px;
+  margin-top: -14em;
+}
+
+.bottom-arab2 {
+  float: right;
+  width: 230px;
+  margin-top: -11.9em;
+  margin-left: -230px;
+  margin-bottom: -200px;
+}
+
+.top-arab {
+  width: 300px;
+  float: right;
+  margin-left: -300px;
+}
+
+.opacarab {
+  opacity: .95;
+}
+
+
+.bottom-arab3 {
+  float: right;
+  width: 230px;
+  margin-top: -17.4em;
+}
+
+.bottom-arab4 {
+  float: right;
+  width: 200px;
+  margin-top: -14em;
+}
+
+.bottom-arab5 {
+  float: right;
+  width: 200px;
+  margin-top: -14em;
+}
+
+.coeurphoto {
+  float: right;
+  width: 200px;
+  margin-left: -280px;
+  margin-top:60px;
+  margin-right: 50px
+}
+
+.photo-dina {
+  margin-top: 5.6%;
+}
+
+
+.photo-dina-pour-iphone {
+  display: none;
+}
+
+.photo-seraphin {
+  margin-top: 6.1%;
+}
+
+.photo-seraphin-pour-iphone {
+  display: none;
+}
+
+.photo-couple {
+  margin-top: 10.9%;
+}
+
+.photo-couple-pour-iphone {
+  display: none;
+}
+
+.photo-voiture {
+  margin-top: 4.2%;
+}
+
+.photo-voiture-pour-iphone {
+  display: none;
+}
+
+.photo-enfants {
+  margin-top: 12%;
+}
+
+.photo-enfants-pour-iphone {
+  display: none;
+}
+
+.bottom-arab.hidden {
+  position: fixed;
+  right: -200px;
+  bottom: 0;
+}
+
+
+.photo-link {
+  position: relative;
+  width: 25%;
+  margin: 2.5%;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+
+  &:hover {
+    .photo-film {
+      transition: 0.5s ease;
+      top: 0%;
+
+    }
+
+    .icon-link {
+      transform: scale(1.05);
+      transition: 0.5s ease;
+    }
+
+  }
+
+  .icon-link {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .photo-film {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    &.juil10 {
+    background-image: url('../images/10juil.png');}
+    &.juil11 {
+    background-image: url('../images/11juil.png');}
+    &.video {
+    background-image: url('../images/video.png');}
+
+    background-size: cover;
+    opacity: 0.4;
+    z-index: 50;
+    transition: 0.5s ease;
+    top: 100%;
+  }
+
+}
+
+
+#accueil {
+  min-height: 400px;
+  background-image: url('../images/arabesque2a.png');
+  background-size: 200px auto;
+  -webkit-transition:background-position 1s ease-in;  
+  -moz-transition:background-position 1s ease-in;  
+  -o-transition:background-position 1s ease-in;  
+  transition:background-position 1s ease-in; 
+  background-repeat: no-repeat;
+}
+
+#liste {
+  min-height: 400px;
+  background-image: url('../images/coeurs.png');
+  background-size: 600px auto;
+  -webkit-transition:background-position 1s ease-in;  
+  -moz-transition:background-position 1s ease-in;  
+  -o-transition:background-position 1s ease-in;  
+  transition:background-position 1s ease-in;
+  background-repeat: repeat-x;
+}
+
+#mariage {
+  min-height: 400px;
+  background-image: url('../images/arabesquerose.png');
+  background-size: 300px auto;
+  -webkit-transition:background-position 1s ease-in;  
+  -moz-transition:background-position 1s ease-in;  
+  -o-transition:background-position 1s ease-in;  
+  transition:background-position 1s ease-in;
+  background-repeat: no-repeat;
+}
+
+#video {
+  min-height: 400px;
+  background-image: url('../images/arabesquerose.png');
+  background-size: 300px auto;
+  -webkit-transition:background-position 1s ease-in;  
+  -moz-transition:background-position 1s ease-in;  
+  -o-transition:background-position 1s ease-in;  
+  transition:background-position 1s ease-in;
+  background-repeat: no-repeat;
+}
+
+#histoire {
+  min-height: 400px;
+  background-image: url('../images/arabesque2d.png');
+  background-size: 200px auto;
+  -webkit-transition:background-position 1s ease-in;  
+  -moz-transition:background-position 1s ease-in;  
+  -o-transition:background-position 1s ease-in;  
+  transition:background-position 1s ease-in; 
+  background-repeat: no-repeat;
+}
+
+#photos {
+  min-height: 400px;
+  background-image: url('../images/galerie2.png');
+  background-size: 310px auto;
+  -webkit-transition:background-position 1s ease-in;  
+  -moz-transition:background-position 1s ease-in;  
+  -o-transition:background-position 1s ease-in;  
+  transition:background-position 1s ease-in;
+  background-repeat: no-repeat;
+}
+
+#bali {
+  min-height: 400px;
+  background-image: url('../images/galerie3.jpg');
+  background-size: 100% auto;
+  -webkit-transition:background-position 1s ease-in;  
+  -moz-transition:background-position 1s ease-in;  
+  -o-transition:background-position 1s ease-in;  
+  transition:background-position 1s ease-in;
+  background-repeat: no-repeat;
+}
+
+
+
+
+#infos {
+  min-height: 400px;
+  background-image: url('../images/arabesque2a.png');
+  background-size: 250px auto;
+  background-repeat: no-repeat;
+}
+
+#message {
+  min-height: 400px;
+  background-image: url('../images/arabesque2a.png');
+  background-size: 230px auto;
+  background-repeat: no-repeat;
+}
+
+
+#mariage p {
+  max-width: 800px;
+  margin: 1em auto;
+}
+
+
+
+section h1 {
+  font-size: 9em;
+  padding-top: .38em;
+  margin: 0;
+  font-weight: normal;
+  font-family: "Great Vibes";
+  text-align: center;
+  color: #fff;
+  opacity: .87;
+
+}
+section h2 {
+  margin-top: 1.6em;
+  margin-bottom: 0.1;
+  font-family: "Great Vibes";
+  font-weight: normal;
+  font-size:1.6em;
+
+}
+
+.fininfos {
+  margin-top: 1.6em;
+  text-align: center;
+  margin-bottom: 0.1;
+  font-family: "Great Vibes";
+  font-weight: normal;
+  font-size:2em;
+  color: #fff;
+  text-shadow: 0.25px 0.25px #000;
+
+}
+
+.photo-domaine-pour-iphone{
+  display: none;
+}
+
+.merci-img {
+  width: 95%;
+  margin-top: -1.6em;
+}
+
+section h3 {
+  font-size: 7em;
+  padding-top: .45em;
+  margin: 0;
+  font-weight: normal;
+  font-family: "Great Vibes";
+  text-align: center;
+  color: #fff;
+  opacity: .9;
+}
+
+section h5 {
+  font-family: "Great Vibes";
+  font-weight: normal;
+  font-size:1.8em;
+
+}
+
+#photos .image {
+  width: 33.33%;
+  height: 260px;
+  background-position: center center;
+  background-size: 100%;
+  float: left;
+  cursor: pointer;
+}
+
+#bali .image {
+  width: 33.33%;
+  height: 260px;
+  background-position: center center;
+  background-size: 100%;
+  float: left;
+  cursor: pointer;
+}
+
+
+#mariage h1 {
+  color: #000;
+  opacity: 0.6;
+}
+
+#histoire h1 {
+  color: #000;
+  opacity : 0.43;
+  margin-left: 0.5em;
+  margin-bottom: 0.21em;
+}
+
+#infos h1 {
+  margin-bottom: 0.15em;
+}
+
+#album h1 {
+  color: #fff;
+  opacity: 0.9;
+}
+
+#album h2 {
+  color: #fff;
+  opacity: 0.9;
+  font-size: 7em;
+  padding: 0;
+  margin-top: 0.9em;
+  margin-bottom: 0em;
+
+}
+
+#album h3 {
+  color: #fff;
+  font-family: "Lato";
+  font-size: 1.5em;
+  margin-bottom: 1.5em;
+
+}
+
+#album p {
+  color: #fff;
+}
+
+
+#ecritures h3 {
+  padding-top: 15px;
+  opacity: 0.83;
+}
+
+#mariage h2 {
+  margin-bottom: 0;
+}
+
+#liste h2 {
+  margin: 1em;
+  font-size: 1.8em;
+}
+
+#photos h1 {
+  color: #000;
+  opacity: 0.6;
+  margin: 0.20em;
+  margin-bottom: -0.15em;
+}
+
+#bali h1 {
+  color: #fff;
+  opacity: 1;
+  margin: 0.20em;
+  margin-bottom: -0.15em;
+}
+
+
+#bali p {
+  color: #fff;
+}
+
+#presence h {
+  margin-bottom: 0.5em;
+}
+
+#liste h1 {
+  color: #000;
+  opacity: 0.6;
+}
+#mariage, #photos, #liste {
+  background-color: #fff;
+}
+
+#bali {
+  background-color: #000;
+}
+
+
+
+
+.description h2 {
+  font-family: "Great Vibes";
+  margin-top: .5em;
+  margin-bottom: 0;
+  font-size: 2.2em;
+  font-weight: lighter;
+  color: $red-color;
+}
+
+.histoire h2 {
+  font-family: "Great Vibes";
+  margin-top: .5em;
+  font-size: 2.2em;
+  font-weight: lighter;
+  color: $red-color;
+}
+
+.description h4 {
+  font-family: "Great Vibes";
+  margin-top: .5em;
+  margin-bottom: 0.7em;
+  font-size: 2.2em;
+  font-weight: lighter;
+  color: #2E2E2E;
 }
 .col-2tiers {
   float: left;
@@ -90,19 +713,154 @@ section {
   float: left;
   width: 30%;
 }
+.arrow-to-top {
+  position: fixed;
+  bottom: 11px;
+  right: 15px;
+  width: 70px;
+  opacity: .38;
+  border-radius: 5px;
+  transition-duration: .5s;
+  -webkit-transition-duration: .5s;
+  &:hover {
+    cursor: pointer;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    opacity: .6;
+  }
+}
+
+.player {
+ margin-top: 50px;
+ font-size: 1.05em;
+ margin-left: 30px;
+
+}
+
+.credit {
+  bottom: 5px;
+  left: 5px;
+  color: #fff;
+  opacity: 0.95;
+  position: fixed;
+}
+
+.verset {
+  font-family: "Great Vibes";
+  margin-top: 1em;
+  font-size: 2em;
+  color: 000;
+  opacity: 0.85;
+  position: center;
+   
+}
+
+.refverset {
+  font-family: "Great Vibes";
+  font-size: 1.1em;
+  color: $red-color;
+  position: center;
+   
+}
+.verset3 {
+  font-family: "Great Vibes";
+  margin-top: 1.3em;
+  font-size: 2.4em;
+  color: #111;
+  opacity: 0.9;
+  position: center;
+   
+}
+
+.refverset3 {
+  font-family: "Great Vibes";
+  font-size: 2.2em;
+  color: $red-color;
+  position: center;
+
+}
+
+.verset2 {
+  font-family: "Great Vibes";
+  margin-top: 1em;
+  font-size: 1.6em;
+  color: 000;
+  opacity: 0.85;
+  position: center;
+   
+}
+
+
+.refverset2 {
+  font-family: "Great Vibes";
+  font-size: 1.6em;
+  color: $red-color;
+  position: center;
+   
+}
+
+.titrevideo {
+  font-family: "Great Vibes";
+  margin-top: 1em;
+  font-size: 4.5em;
+  color: #111;
+  opacity: 0.75;
+  position: center;
+   
+}
+
+.arabesqueverset {
+  width: 200px;
+  opacity: 0.95;
+   
+}
+
+.arabesqueverset2 {
+  width: 200px;
+  opacity: 0.95;
+  margin-top: 18px;
+}
+
+.arabesqueverset3 {
+  width: 200px;
+  opacity: 0.95;
+   
+}
 
 #histoire .section-container {
   margin-top: 1em;
-  background-color: rgba(255,255,255,.6);
+  background-color: rgba(255,255,255,.65);
   padding: 1em;
+  border-radius: 4px;
 }
 
-#infos {
-  background-image: url("../images/rose.jpg");
-  color: #fff;
-  background-position: right;
-  background-repeat: no-repeat;
-  background-color: #000;
+#infos .section-container {
+  margin-top: 1em;
+  background-color: rgba(255,255,255,.65);
+  padding: 1em;
+  border-radius: 4px;
+}
+
+#message .section-container {
+  margin-top: 1em;
+  background-color: rgba(255,255,255,.65);
+  padding: 1em;
+  border-radius: 4px;
+}
+.photo-resposive {
+  width: 100%;
+}
+#presence .section-container {
+  margin-top: 1em;
+  background-color: rgba(255,255,255,.65);
+  padding: 1em;
+  border-radius: 4px;
+}
+#message .group.name-input {
+  margin-left: 33%;
+}
+#message .description {
+  text-align: center;
 }
 
 .fixed{
@@ -123,6 +881,7 @@ ul {
 .nav li {
   display: inline-block;
   padding: 1em 1.2em;
+  font-family: "lato"
 }
 
 body {
@@ -139,9 +898,10 @@ li.subnav {
 }
 
 .nav-bar {
-  background-color: rgba(0,0,0,.8);
+  background-color: rgba(0,0,0,.57);
   color: #ccc;
   text-align: center;
+  z-index: 5;
 }
 
 .container {
@@ -153,19 +913,1131 @@ li.subnav {
   text-align: center;
   background-color: rgba(255,255,255,.4);
 }
+.top-bar-content {
+  background-size: 353px;
+  //background-image: url("../images/arabesque4.png");
+  background-position-x: 28px;
+}
 
 .top-bar .title {
   font-family: "Mademoiselle Camille L";
-  font-size: 5em;
+  font-size: 10.3em;
   font-weight: normal;
-  line-height: 1;
+  line-height: .9;
   margin: 0;
+  margin-left: 0.1em;
   padding: 0;
-  color: #ff8b89;
+  color: #ff6783;
 }
 
 .top-bar .subtitle {
   font-family: "lato";
-  padding: .5em 0;
+  padding: 1.2em 0;
   margin: 0;
+  padding-top: 0;
+  font-size: 1.35em;
 }
+.img-domaine {
+  width: 890px;
+}
+span.slider-arrow.next {
+  position: absolute;
+  top: 40%;
+  right: 150px;
+}
+span.slider-arrow.prev {
+  position: absolute;
+  top: 40%;
+  left: 150px;
+}
+.cover-page {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.8);
+}
+.dot .active {
+  color: #fff;
+}
+li.dot {
+  padding: 0;
+  &:hover {
+    background-color: transparent;
+    transition: .5s;
+    color: #ccc;
+  }
+}
+.slider-arrow {
+  font-size: 6em;
+  color: #ccc;
+  cursor: pointer;
+  &:hover {
+    color: #ddd;
+  }
+}
+.close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: #ccc;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+  }
+}
+.slide-img {
+  max-height: 578px;
+  margin: 1em;
+  margin-bottom: 0.2em;
+  margin-top: 1.4em;
+  border: solid 1.5px #f0f0f0;
+}
+
+
+/***** material label *****/
+.group .bar, .group input {
+  box-sizing:border-box;
+}
+
+
+h2     { 
+  text-align:center; 
+  margin-bottom: 28px;
+}
+h2 small { 
+  font-weight:normal; 
+  color:#888; 
+  display:block; 
+}
+.footer   {
+  text-align:center;
+}
+.footer a  {
+  color:#53B2C8;
+}
+
+/* form starting stylings ------------------------------- */
+.group        { 
+  position:relative; 
+  margin: 2em 0; 
+}
+.group input         {
+  font-size: 17px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+.group input:focus     {
+  outline:none;
+}
+
+/* LABEL ======================================= */
+.group label {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label, input:valid ~ label    {
+  top:-20px;
+  font-size:14px;
+  color:#5264AE;
+}
+
+/* BOTTOM BARS ================================= */
+.bar  {
+  position:relative;
+  display:block;
+  width:300px;
+}
+.bar:before, .bar:after   {
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.row {
+  display: block;
+  margin: 1em 0;
+}
+.normal-label {
+  color: #000;
+  font-size: 1em;
+  font-weight: normal;
+  position: static;
+  left: auto;
+  top: auto;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+input.radio {
+  padding: 0;
+  width: auto;
+  border: none;
+  display: inline;
+}
+.bar:after {
+  right:50%; 
+}
+
+/* active state */
+input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+/* active state */
+textarea:focus ~ .bar:before, textarea:focus ~ .bar:after {
+  width:50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from { background:#5264AE; }
+  to  { width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+  from { background:#5264AE; }
+  to  { width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+  from { background:#5264AE; }
+  to  { width:0; background:transparent; }
+}
+
+.form-control {
+  font-family: 'lato';
+  display: block;
+  border: none;
+  border-radius: 0 !important;
+  font-weight: 300;
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+  border-bottom: 1px solid #757575;
+}
+textarea.form-control {
+  font-size: 20px;
+  height: 100px;
+  width: 300px;
+  padding: 10px 0 10px 5px;
+  background-color: #fff;
+}
+.button.grey {
+  background-color: #ccc;
+  color: #000;
+  &:hover {
+    background-color: #ddd;
+  }
+}
+.form-control:focus {
+  border-color: #5264AE;
+  outline: none;
+  box-shadow: none;
+}
+.card h2 {
+  margin-top: 0;
+}
+.button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 0em 1em 0em 1em;
+  width: 120px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 2px;
+  font-size: 0.9em;
+  background-color: $red-color;
+  color: #fff;
+  &:hover {
+    background-color: #fe4e6b;
+  }
+}
+.raised {
+  transition: box-shadow 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0.2s;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+.button > paper-ripple {
+  border-radius: 2px;
+  overflow: hidden;
+}
+html /deep/ [fit] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.center {
+  text-align: center;
+}
+
+/***** end material label *****/
+
+/******** begin radio button**********/
+
+.radio {
+  display: inline-block;
+  padding-right: 1em;
+  font-size: 1em;
+  cursor: pointer;
+  color: #000;
+}
+
+.radio:hover .inner {
+  -webkit-transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
+  opacity: .5;
+}
+
+.radio input {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.radio input:checked + .outer .inner {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.radio input:checked + .outer { border: 3px solid $red-color; }
+
+.radio input:focus + .outer .inner {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+  background-color: $red-color;
+}
+
+.radio .outer {
+  width: 20px;
+  height: 20px;
+  display: block;
+  float: left;
+  margin: 0 8px 8px 1px;
+  border: 3px solid #656565;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.radio .inner {
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  width: 16px;
+  height: 16px;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  display: block;
+  margin: 2px;
+  border-radius: 50%;
+  background-color: $red-color;
+  opacity: 0;
+}
+
+
+
+/******* end radio ******/
+/* pour iPad*/
+@media screen and (max-device-width : 1024px) {
+  
+  .top-bar .title {
+  font-size: 8em;
+}
+
+.top-bar .subtitle {
+  font-family: "lato";
+  font-size: 1em;
+}
+
+#accueil p {
+  font-size: 1.4em;
+  margin-right: -30px;
+}
+
+#accueil {
+  background-size: 140px auto;
+}
+
+
+#histoire {
+  background-size: 150px auto;
+}
+
+#histoire h1 {
+ opacity: 0.5;
+ margin-left: 1em;
+}
+
+.bottom-arab2 {
+  width: 140px;
+  margin-top: -8em;
+}
+
+
+.photo-dina {
+  margin-top: 14.8%;
+}
+.photo-seraphin {
+  margin-top: 14.8%;
+}
+.photo-couple {
+  margin-top: 14.7%;
+
+}
+.photo-mairie {
+  width: 390px;
+
+}
+
+.arabesqueverset {
+  width: 160px;
+  opacity: 0.95;
+   
+}
+
+.arabesqueverset2 {
+  width: 160px;
+  opacity: 0.95;
+  margin-top: 18px;
+}
+
+
+.img-domaine {
+    width: 500px;
+}
+
+
+.bottom-arab4 {
+  width: 160px;
+  margin-top: -8em;
+}
+
+#infos {
+  background-size: 160px auto;
+}
+
+
+#infos h1 {
+  font-size: 6em;
+  margin-left: 0.5em;
+}
+
+
+.photo-domaine {
+  margin-right: 0;
+  width: 220px;
+  margin-top: 2%;
+}
+
+.photo-voiture {
+  margin-top: 6%;
+}
+
+.photo-voiture-pour-iphone {
+  display: none;
+}
+
+.photo-enfants {
+  margin-top: 7%;
+}
+
+.photo-enfants-pour-iphone {
+  display: none;
+}
+
+.bottom-arab {
+  width: 130px;
+  margin-top: -9.7em;
+}
+
+.racontephoto {
+  font-size: 1em;
+}
+
+
+#photos h1 {
+  margin: 0.20em;
+  font-size: 6em;
+  margin-bottom: 0.3em;
+}
+
+#photos {
+  background-size: 200px auto;
+}
+
+.coeurphoto {
+  width: 180px;
+  margin-top: 20px;
+}
+
+/*AIDE SERAF*/
+.slide-img {
+  max-height: 500px;
+  margin: 1em;
+  margin-bottom: 0.2em;
+  margin-top: 13em;
+}
+
+#photos .image {
+  height: 180px;
+}
+
+
+span.slider-arrow.next {
+  top: 40%;
+  right: 45px;
+}
+span.slider-arrow.prev {
+  top: 40%;
+  left: 45px;
+}
+
+
+#presence h3{
+  font-size: 5em;
+  margin-bottom: 0.5em;
+}
+
+#liste {
+  background-position-x:-25px;
+}
+
+.photo-voyage {
+  width: 600px;
+}
+
+
+#liste h1 {
+ margin-bottom: 0.3em;
+}
+
+#liste h2 {
+  font-size: 2.6em;
+}
+
+
+#message {
+  background-size: 160px auto;
+}
+
+#message .group.name-input {
+  margin-left: 28.5%;
+}
+
+.arabesqueverset3 {
+  width: 160px;
+}
+
+
+.bottom-arab5 {
+  width: 140px;
+  margin-left: -200px;
+  margin-top: -10em;
+}
+
+
+.nav li {
+    font-size: .6em;
+}
+
+.bg-img {
+    height: 105%;
+    width: auto;
+  }
+
+
+.photo-dina-pour-iphone {
+  display: none;
+}
+
+.photo-seraphin-pour-iphone {
+  display: none;
+}
+
+.photo-couple-pour-iphone {
+  display: none;
+}
+
+.photo-domaine-pour-iphone{
+  display: none;
+}
+
+
+
+}
+/* fin pour iPad*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pour iPhone */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 450px) {
+
+
+.top-bar .title {
+  font-size: 6.5em;
+  margin-left: -6px;
+  margin-top: -0.2em;
+}
+
+.top-bar .subtitle {
+  font-family: "lato";
+  font-size: 0.8em;
+}
+
+.nav li {
+    font-size: .7em;
+    padding: 0.3em 0.3em;
+}
+#accueil p {
+  display: none;
+    }
+
+#accueil {
+  background-size: 105px auto;
+}
+
+
+.bottom-arab2 {
+  float: right;
+  width: 100px;
+  margin-top: 150px;
+}
+
+section h1 {
+  font-size: 4.5em;
+  padding-top: .38em;
+  margin: 0;
+  font-weight: normal;
+  font-family: "Great Vibes";
+  text-align: center;
+  color: #fff;
+  opacity: .87;
+
+}
+
+section h2 {
+  margin-top: 1.6em;
+  margin-bottom: 0.1;
+  font-family: "Great Vibes";
+  font-weight: normal;
+  font-size:1.6em;
+
+}
+
+#infos h4 {
+  text-align: center;
+}
+
+.marge {
+  margin-top: -1.5em;
+}
+
+.l-constrained {
+  max-width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin: 1 auto;
+}
+
+#histoire {
+  background-size: 100px auto;
+  background-position-y: -2em;
+}
+
+#histoire h1 {
+ opacity: 0.5;
+ margin-left: 0;
+ margin-bottom: 0em;
+ font-size: 5.5em;
+}
+
+#histoire h2 {
+ opacity: 0.9;
+ margin-left: 0;
+ margin-top: 0;
+ font-size: 3em;
+ color: $red-color;
+}
+
+#histoire p{
+  text-align: justify;
+}
+
+#histoire .section-container {
+  padding: 0.5em;
+  margin: 0;
+  margin-top: 1em;
+
+}
+
+.titrevideo {
+  margin-top: 0.5em;
+  font-size: 3em;
+  color: #fff;
+  opacity: 0.9;
+   
+}
+
+.verset3 {
+  margin-top: 1em;
+  font-size: 2em;
+  color: #fff;
+  opacity: 0.9;   
+}
+
+.refverset3 {
+  color: #fff;
+  font-size: 1.7em;
+}
+
+
+.arabesqueverset {
+  width: 160px;
+  opacity: 0.95;
+   
+}
+
+.arabesqueverset2 {
+  width: 160px;
+  opacity: 0.95;
+  margin-top: 18px;
+}
+
+.top-arab {
+  width: 150px;
+  margin-left: -150px;
+  margin-top: 20px;
+}
+
+#mariage {
+  background-size: 150px auto;
+  background-position-y: 20px;
+}
+
+
+.verset2 {
+  font-size: 1.2em;
+   
+}
+
+.refverset2 {
+  font-size: 1.4em;
+  margin-top: -0.3em;
+}
+
+#mariage .section-container {
+  padding: 1em;
+  margin: 0;
+
+}
+
+.photo-dina {
+  display: none;
+}
+
+.photo-dina-pour-iphone {
+  display: inline;
+  width: 100%;
+  margin-top: 0.8em;
+}
+
+.photo-seraphin {
+  display: none;
+}
+
+.photo-seraphin-pour-iphone {
+  display: inline;
+  width: 100%;
+  margin-top: 0.8em;
+}
+
+.photo-couple {
+  display:none;
+}
+
+.photo-couple-pour-iphone {
+  display: inline;
+  width: 100%;
+  margin-top: 0.8em;
+}
+
+.photo-mairie {
+  width: 170px;
+
+}
+
+#mariage h2 {
+  font-size: 2em;
+}
+
+
+.bottom-arab4{
+  display: none;
+}
+
+.bottom-arab{
+  width: 100px;
+  margin-top: -7em;
+}
+
+#infos {
+  background-size: 100px auto;
+}
+
+#infos h1 {
+  font-size: 4em;
+  margin-left: -15px;
+}
+
+#infos h4 {
+  font-size: 2em;
+}
+
+
+
+#infos .section-container {
+  padding: 0em;
+}
+
+#infos p {
+  text-align: center;
+}
+
+
+.photo-domaine{
+  display: none;
+}
+
+.photo-domaine-pour-iphone {
+  display: inline;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.card {
+  padding: 1em 1em 1em 1em;
+
+   &.domaine-address {
+      padding: 1em 1em 1em 1em;
+  }
+
+}
+
+
+#card p{
+  text-align: center;
+}
+
+address {
+  margin: 0.5em;
+}
+
+.coords {
+  font-size: 1.4em;
+}
+
+
+.googlemaps{
+  display: none;
+}
+
+section h5 {
+  font-family: "Great Vibes";
+  font-weight: normal;
+  font-size: 1.6em;
+
+}
+
+
+.col-2tiers {
+  float: center;
+  width: 100%;
+}
+.col-1tiers {
+  float: center;
+  width: 100%;
+}
+
+
+.arabesqueverset {
+  width: 160px;
+  opacity: 0.95;
+   
+}
+
+.arabesqueverset2 {
+  width: 160px;
+  opacity: 0.95;
+  margin-top: 18px;
+}
+
+
+.img-domaine {
+    width: 100%;
+}
+
+
+.bottom-arab4 {
+  width: 160px;
+  margin-top: -8em;
+}
+
+
+
+.photo-domaine {
+  margin-right: 0;
+  width: 220px;
+  margin-top: 2%;
+}
+
+.photo-voiture {
+  display: none;
+}
+
+.photo-voiture-pour-iphone {
+  display: inline;
+  width: 100%;
+}
+
+.photo-enfants {
+  display: none;
+}
+
+.photo-enfants-pour-iphone {
+  display: inline;
+  width: 100%;
+}
+
+.racontephoto {
+  font-size: 1em;
+}
+
+
+#photos h1 {
+  margin: 0.20em;
+  font-size: 6em;
+  margin-bottom: -0.5em;
+}
+
+#photos {
+  background-size: 150px auto;
+  background-position-y: 50px;
+  background-position-x: -10px;
+}
+
+#photos p {
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+}
+
+.coeurphoto {
+  width: 110px;
+  margin-top: 80px;
+  margin-right: 0;
+}
+
+.slide-img {
+  max-height: 500px;
+  margin: 1em;
+  margin-bottom: 0.2em;
+  margin-top: 13em;
+}
+
+#photos .image {
+  height: 75px;
+}
+
+
+span.slider-arrow.next {
+  top: 40%;
+  right: 5px;
+}
+span.slider-arrow.prev {
+  top: 40%;
+  left: 5px;
+}
+
+
+#presence h3{
+  font-size: 4em;
+  margin-bottom: 0;
+}
+
+.codelong{
+  display: none;
+}
+
+.group input {
+  font-size: 17px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+
+#liste {
+  background-position-x:-25px;
+  background-size: 350px;
+}
+
+.photo-voyage {
+  width: 100%;
+}
+
+
+#liste h1 {
+ margin-bottom: 0.25em;
+}
+
+#liste h2 {
+  font-size: 1.5em;
+}
+
+#liste .l-constrained{
+  padding-bottom: 0.4em;
+}
+
+.button {
+ width: 45%;
+}
+
+.button-long {
+  width: 80%!important;
+  margin: 1em;
+}
+
+#message h2 {
+  font-size: 2em
+}
+
+
+textarea.form-control {
+  height: 50px;
+}
+
+
+#ecritures h3 {
+  font-size: 3em;
+}
+
+
+#message {
+  background-size: 105px auto;
+}
+
+#message .group.name-input {
+  margin-left: 16%;
+  margin-right: 14.5%;
+}
+
+.arabesqueverset3 {
+  width: 160px;
+}
+
+
+.bottom-arab5 {
+  width: 100px;
+  margin-left: -200px;
+  margin-top: -10em;
+}
+
+
+
+.bg-img {
+    height: 105%;
+    width: auto;
+  }
+
+/* BOTTOM BARS ================================= */
+.bar  {
+  width:100%;
+}
+
+}
+/* fin pour iPhone */
