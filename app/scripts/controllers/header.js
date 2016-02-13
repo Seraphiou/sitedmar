@@ -116,14 +116,23 @@ angular.module('leSiteDuMariageApp').directive('scrollindex', function ($window)
             var mariage=elmYPosition('mariage');
             var infos=elmYPosition('infos');
             var photos=elmYPosition('photos');
-            var message=elmYPosition('message');
             var presence=elmYPosition('presence');
             var liste=elmYPosition('liste');
+            var album=elmYPosition('album');
+            var bali=elmYPosition('bali');
+            var message=elmYPosition('message');
             var ecritures=elmYPosition('ecritures');
-            if(this.pageYOffset>liste){
+            if(this.pageYOffset>bali){
+                if (scope.bgimg!=='bg5') {
+                    scope.bgimg='bg5';
+                }
+            
+            }else if (this.pageYOffset>liste) {
                 if (scope.bgimg!=='bg4') {
                     scope.bgimg='bg4';
                 }
+
+
             }else if (this.pageYOffset>photos) {
                 if (scope.bgimg!=='bg3') {
                     scope.bgimg='bg3';
@@ -145,10 +154,16 @@ angular.module('leSiteDuMariageApp').directive('scrollindex', function ($window)
             }else{
                 scope.showArrow=false;                
             }
+
+
             if (this.pageYOffset >= ecritures) {
                 scope.level='ecritures';
             } else if (this.pageYOffset >= message) {
                 scope.level='message';
+            } else if (this.pageYOffset >= bali) {
+                scope.level='bali';
+            } else if (this.pageYOffset >= album) {
+                scope.level='album'; 
             } else if (this.pageYOffset >= liste) {
                 scope.level='liste';
             } else if (this.pageYOffset >= presence) {
@@ -195,6 +210,19 @@ angular.module('leSiteDuMariageApp').controller('headerCtrl', function ($scope, 
         {image: 'images/Gallery/DS10.7e53165e.jpg', description: 'Image 10'},
         {image: 'images/Gallery/DS11.eec5bc03.jpg', description: 'Image 11'},
         {image: 'images/Gallery/DS12.02fbe525.jpg', description: 'Image 12'},
+        {image: 'images/PhotoBali/B1.bda81536.jpg', description: 'Image 13'},
+        {image: 'images/PhotoBali/B2.3577fa2f.jpg', description: 'Image 14'},
+        {image: 'images/PhotoBali/B3.a0804b16.jpg', description: 'Image 15'},
+        {image: 'images/PhotoBali/B4.1df764e6.jpg', description: 'Image 16'},
+        {image: 'images/PhotoBali/B5.6952a988.jpg', description: 'Image 17'},
+        {image: 'images/PhotoBali/B6.df159499.jpg', description: 'Image 18'},
+        {image: 'images/PhotoBali/B7.d1b7718b.jpg', description: 'Image 19'},
+        {image: 'images/PhotoBali/B8.ceca17e1.jpg', description: 'Image 20'},
+        {image: 'images/PhotoBali/B9.bbd27973.jpg', description: 'Image 21'},
+        {image: 'images/PhotoBali/B10.fff7618e.jpg', description: 'Image 22'},
+        {image: 'images/PhotoBali/B11.9d7e7f4a.jpg', description: 'Image 23'},
+        {image: 'images/PhotoBali/B12.a96c56c6.jpg', description: 'Image 24'},
+
     ];
     $scope.direction = 'left';
     $scope.currentIndex = 0;

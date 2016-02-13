@@ -26,8 +26,8 @@
       <img class="bg-img" ng-show="bgimg=='bg2'" src="images/bg2.jpg"/>
       <img class="bg-img" ng-show="bgimg=='bg3'" src="images/bg3.jpg"/>
       <img class="bg-img" ng-show="bgimg=='bg4'" src="images/bg4.jpg"/>
-      <img class="bg-img" ng-show="bgimg=='bg4'" src="images/bg4.jpg"/>
       <img class="bg-img" ng-show="bgimg=='bg5'" src="images/bg5.jpg"/>
+      <img class="bg-img" ng-show="bgimg=='bg6'" src="images/bg6.jpg"/>
       <div class="header">
         <div class="top-bar">
           <div class="top-bar-content">
@@ -40,11 +40,11 @@
             <li ng-click="scrollToId('histoire')" ng-class="{active:level=='histoire'}">Nous...</li>
             <li ng-click="scrollToId('mariage')" ng-class="{active:level=='mariage'}">Le Mariage</li>
             <li ng-click="scrollToId('infos')" ng-class="{active:level=='infos'}">Infos Pratiques</li>
-            <li ng-click="scrollToId('photos')" ng-class="{active:level=='photos'}">Galerie Photos</li>
+            <li ng-click="scrollToId('photos')" ng-class="{active:level=='photos'}">Photos</li>
             <li ng-click="scrollToId('presence')" ng-class="{active:level=='presence'}">Confirmation</li>
             <li ng-click="scrollToId('liste')" ng-class="{active:level=='liste'}">Notre Liste</li>
-            <li ng-click="scrollToId('album')" ng-class="{active:level=='album'}">Images du Mariage !</li>
-            <li ng-click="scrollToId('bali')" ng-class="{active:level=='bali'}">Notre Voyage à Bali...</li>
+            <li ng-click="scrollToId('album')" ng-class="{active:level=='album'}">Album du Mariage !</li>
+            <li ng-click="scrollToId('bali')" ng-class="{active:level=='bali'}">Un bout de Bali...</li>
             <li ng-click="scrollToId('message')" ng-class="{active:(level=='message')||(level=='ecritures')}">Livre d'Or</li>
           </ul>
         </div>
@@ -73,7 +73,7 @@
       </div>
       <img class="arrow-to-top" ng-show="showArrow" ng-click="scrollToId('page-top')" src="images/icons/arrow.png">
       
-      <div class="credit" ng-show="(level=='presence')||(level=='liste')||(level=='message')||(level=='ecritures')"> © Site réalisé par Séraphin Burgermeister & Dina Yapoga</div>
+      <div class="credit" ng-show="(level=='presence')||(level=='liste')||(level=='message')||(level=='ecritures')"> © Site réalisé par Séraphin Burgermeister & Dina Burgermeister
  
     </div>
 
